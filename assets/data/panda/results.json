@@ -1,0 +1,23 @@
+{
+  "data_md5": {"panda_fig3a.csv": "df578555b01f75b3373d42d5336b8190", "panda_fig3b.csv": "0d5d04f094b5a7ff56e8554ab5805d4a", "panda_fig3d.csv": "d77b516441a8f3c12b930fd560172790"},
+  "n": 553,
+  "mean_nm_s2": 33.096184655936035,
+  "formal_se_nm_s2": 5.4400927056193416,
+  "scaled_se_nm_s2": 5.610010301823207,
+  "chi2": 587.0212109153017,
+  "dof": 552,
+  "reduced_chi2": 1.063444222672648,
+  "goodness_of_fit_p": 0.14629049566442032,
+  "excess_nm_s2": -2.1038153440639675,
+  "excess_sigma_nm_s2": 6.288705398296418,
+  "excess_95_interval_nm_s2": [-14.429451434107223, 10.221820745979288],
+  "folded_absolute_excess95_nm_s2": 12.985152941741527,
+  "null_delta_chi2": 0.11191614343986324,
+  "leave_one_out_mean_range": [32.08801122646737, 33.982123093719174],
+  "separation_slope_nm_s2_per_um": 1.8048308135799942,
+  "separation_slope_sigma": 2.83795294822831,
+  "separation_linear_chi2_1dof": 1.1208913817663175,
+  "nominal_geometry_newton_nm_s2": 37.19769146737975,
+  "geometry_quadrature_change_nm_s2": 0.0,
+  "geometry_normalization_to_published": 0.9462952836970647
+}

@@ -1,0 +1,18 @@
+{
+  "project": "OPEN FIELD",
+  "revision": "rev02-github",
+  "status": "No anomalous force detected in recovered fifth-force reanalysis",
+  "investigation_count": 150,
+  "source_count": 76,
+  "candidate_mapping_count": 3000,
+  "assets": {
+    "investigations": "/assets/data/investigations.json",
+    "sources": "/assets/data/sources.json",
+    "url_registry_json": "/assets/data/urls.json",
+    "url_registry_csv": "/assets/data/urls.csv",
+    "panda_report": "/assets/data/panda/REPORT.md",
+    "panda_fig3a": "/assets/data/panda/panda_fig3a.csv",
+    "panda_fig3b": "/assets/data/panda/panda_fig3b.csv",
+    "panda_fig3d": "/assets/data/panda/panda_fig3d.csv"
+  }
+}

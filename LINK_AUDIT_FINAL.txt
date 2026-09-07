@@ -1,0 +1,14 @@
+OPEN FIELD REV02 STATIC AUDIT
+Root: /mnt/data/anti-gravity_site_rev02
+HTML pages: 18
+Local HTML asset/link refs checked: 283
+Missing local refs: 0
+Atlas: 150 investigations | 76 canonical sources | 3000 subject-source associations
+Atlas nonnumeric Mapped URLs fields: 0
+Panda CSV files:
+  panda_fig3a.csv: 554 rows, max 2 columns
+  panda_fig3b.csv: 16 rows, max 3 columns
+  panda_fig3d.csv: 3 rows, max 2 columns
+Missing transcript representations: 0
+Missing required recovery assets: 0
+RESULT: PASS
