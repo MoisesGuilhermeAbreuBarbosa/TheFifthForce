@@ -16,6 +16,8 @@ Open http://localhost:3000. The local SQLite database is created on first accoun
 
 For a production build: `npm run build`, then `npm start`. Integration tests: `node scripts/test-app.mjs` starts a temporary server and disposable database, runs the account/API checks, then cleans up. `npm test` alone targets an already-running development server. Never point tests at production.
 
+Browser tests also run in GitHub Actions. To run them locally after a build: `npx playwright install chromium`, then `BROWSER_TESTS=1 node scripts/test-app.mjs`. These use a disposable database. Browser support and model downloads are required for the separate audio-transcription tool.
+
 ## Vercel
 
 Use the **existing** project, connect this repository, select Next.js and the repository root, and clear earlier static output/build overrides. `vercel.json` selects Next.js. Preview this branch before merging it into the production branch.

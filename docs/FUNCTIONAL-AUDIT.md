@@ -37,4 +37,5 @@ Baseline: the original open-field-notes source checkout, compared with Rev02 sta
 - CSV checksum/parser checks passed for all 553 blocks, 15 histogram bins and 3 groups.
 - API integration tests passed: create/recover/sign out, generate/revoke API key, question/video/replication create/read/delete, private drafts, author isolation, rejected forged old-host identity header and cross-origin writes.
 - Checked research routes, Markdown sources, canonical CSV, ZIP and JSON downloads return nonempty HTTP 200 responses.
-- Browser automation failed to start its daemon after two attempts. No visual screenshot or browser interaction pass is claimed. Live Vercel deployment and old-host database migration remain unverified.
+- Local browser automation failed to start; GitHub Actions subsequently passed the Chromium browser tests: repository tab/search/pagination, rendered formulas, embedded chart, Markdown download, research atlas, mobile overflow check, account/API-key controls, video submission and question contribution navigation. Run: https://github.com/MoisesGuilhermeAbreuBarbosa/TheFifthForce/actions/runs/34198052838 (application commit 0c7a72c).
+- Live Vercel deployment and old-host database migration remain unverified.
