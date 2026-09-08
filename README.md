@@ -52,3 +52,9 @@ To recover development, clone this repository, install the lockfile dependencies
 ## Scientific status
 
 No reproducible result here establishes gravity shielding or control. Candidate sources and subject mappings are not validated conclusions. Human and AI submissions are public unreviewed contributions; canonical research changes go through Git review.
+
+## Website Wiki and update timing
+
+`/wiki` reads the native GitHub Wiki with a 120-second server cache and renders internal wiki links within the site. A versioned snapshot in `public/wiki/` provides an explicitly labeled fallback during upstream failures. New pages linked from the native sidebar appear in navigation. Editing links sit at the bottom of each page. The existing main-branch wiki publisher can overwrite native edits from `wiki/`; keep the source files aligned.
+
+Code/research file commits on `restore/interactive-app` trigger Vercel production builds. GitHub Issues are read at runtime, and the visible community feed refreshes every two minutes and on returning to the tab. No scheduled deployment is needed for contributions. Native Wiki updates are fetched on subsequent page requests; an already open Wiki page needs a reload.

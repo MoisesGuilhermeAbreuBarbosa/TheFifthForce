@@ -20,3 +20,16 @@ test('GitHub publishing prepares a draft without pretending to publish',async({p
  await page.goto('/#questions');await page.getByRole('button',{name:'Post a new question'}).click();await expect(page.getByRole('heading',{name:'Add to the investigation'})).toBeVisible();
  await page.goto('/#newsroom');await page.getByRole('button',{name:'Generate draft'}).click();await page.getByRole('button',{name:'Save in this browser',exact:true}).click();await page.reload();await page.getByRole('button',{name:'Generate draft'}).click();await page.getByRole('button',{name:'Save in this browser',exact:true}).click();expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('open-field-local-briefs-v1')||'[]').length)).toBe(2);
 });
+test('Compact Home navigation and web Wiki',async({page})=>{
+ await page.goto('/');await expect(page.getByRole('heading',{name:'Gravity? Anti-gravity evidence?'})).toBeVisible();
+ await expect(page.locator('.collaboration-note')).not.toHaveAttribute('open','');
+ await expect(page.locator('header img')).toHaveAttribute('src','/open-field-mark.svg');
+ const menu=page.getByRole('tablist');expect(await menu.locator('a').first().textContent()).toBe('Videos & submissions');
+ expect(await menu.evaluate(e=>e.getBoundingClientRect().top)).toBeLessThan(480);
+ await page.getByRole('tab',{name:'Repository',exact:true}).click();await expect(page.locator('.intro')).toHaveCount(0);
+ await page.getByRole('link',{name:'Home',exact:true}).click();await expect(page.locator('.intro')).toBeVisible();
+ await page.goto('/wiki?page=AI-Human-Collaboration');await expect(page.locator('.wiki-article .scientific-prose')).toContainText('research');
+ await expect(page.getByRole('link',{name:'Edit this page on GitHub',exact:true})).toHaveAttribute('href',/AI-Human-Collaboration\/_edit$/);
+ await page.getByRole('navigation',{name:'Wiki pages'}).getByRole('link',{name:'Roadmap',exact:true}).click();await expect(page).toHaveURL(/page=Roadmap/);await expect(page.locator('.wiki-article h1')).toContainText('Roadmap');
+ await page.getByRole('link',{name:'Home',exact:true}).first().click();await expect(page.locator('.intro')).toBeVisible();
+});
