@@ -1,0 +1,8 @@
+export const wikiRoot='https://github.com/MoisesGuilhermeAbreuBarbosa/TheFifthForce/wiki';
+const rawRoot='https://raw.githubusercontent.com/wiki/MoisesGuilhermeAbreuBarbosa/TheFifthForce/';
+export const defaultPages=['Home','AI-Human-Collaboration','Research-Presence-Protocol','Anti-Gravity','References','Research-Methodology','Roadmap','Current-Status','Software-Documentation'];
+export function slug(value:string){return value.trim().replace(/ /g,'-');}
+export function wikiLinks(content:string){return content.replace(/\[\[([^\]]+)\]\]/g,(_,inside:string)=>{const [label,target]=inside.split('|');const page=defaultPages.includes(slug(label))?slug(label):slug(target||label);return `[${label}](/wiki?page=${encodeURIComponent(page)})`;}).replace(/\]\((?:\.\/)?([A-Za-z0-9_-]+)\.md(#[^)]*)?\)/g,'](/wiki?page=$1$2)').replace(/https:\/\/github\.com\/MoisesGuilhermeAbreuBarbosa\/TheFifthForce\/wiki\/([A-Za-z0-9_-]+)/g,'/wiki?page=$1');}
+export async function readWiki(page:string){if(!/^[A-Za-z0-9_-]{1,100}$/.test(page))return null;try{const r=await fetch(rawRoot+page+'.md',{next:{revalidate:120},signal:AbortSignal.timeout(8000)});if(r.ok)return {content:await r.text(),live:true};}catch{}
+// A versioned copy keeps the reader usable if GitHub is temporarily unavailable.
+try{const {readFile}=await import('node:fs/promises');const {join}=await import('node:path');return {content:await readFile(join(process.cwd(),'public','wiki',page+'.md'),'utf8'),live:false};}catch{return null;}}

@@ -1,0 +1,187 @@
+ARCHIVED DRAFT — NOT PEER REVIEWED. Later reanalysis and limitations take precedence.
+
+From Gravity Theory to a Laboratory Test
+A preliminary engineering design for source-modulated atom interferometry
+Prepared by Anonymous Research Collective • 5 September 2026 • Revision 1.0
+Status: research design, not a demonstrated anti-gravity machine or a fabrication release. Calculations below are idealized engineering estimates; no new experiment or scalar-field simulation has been performed for this paper.
+Abstract and engineering decision
+A practical program needs a measurable physical hypothesis before it needs a propulsion device. This paper specifies a laboratory instrument that measures the horizontal attraction of a movable source mass to freely falling rubidium atoms, subtracts a geometrically calculated Newtonian response, and searches for a source-correlated residual. The proposed dual-channel Raman interferometer uses ordinary laboratory technology. Its ambitious design targets are 10⁻⁹ m/s² statistical uncertainty and 2 × 10⁻¹⁰ m/s² systematic uncertainty after averaging. Neither target is demonstrated here.
+A canonical screened scalar field is selected as a conditional test model because its equations yield a calculable laboratory signal. It is not selected as an established route to anti-gravity: with universal same-sign couplings its additional force is attractive. A null result constrains model parameters; an attractive residual would be a new-force candidate; neither would demonstrate gravitational repulsion. Published atom experiments already constrain these models [R1–R4].
+What this paper can implement
+Deliverable
+Engineering status
+Cold-atom source-mass experiment
+Preliminary architecture, geometry, estimator, noise targets and commissioning plan specified.
+Screened-field prediction
+Equations and solver acceptance tests specified; parameter-space forecast still required.
+Anti-gravity actuator
+Not specified: no validated controllable repulsive mechanism has been established by the reviewed sources.
+Scope: a selected-source engineering synthesis, not an exhaustive survey of every web claim. The physical sign test is a hard gate: engineering cannot repair an attractive theory into a repulsive one without changing the model and confronting existing evidence.
+1. Correcting the physics before building
+Earlier inference or common error
+Correction and design consequence
+Screened scalar fields are the strongest anti-gravity route.
+They are experimentally testable candidates for an additional force, not a demonstrated repulsive mechanism. Do not advertise this instrument as a levitator.
+Dual-species subtraction is automatically optimal.
+A universal signal can cancel in co-located species differences. Use spatially separated, same-species channels for discovery; use species changes later as a diagnostic.
+Vacuum or chamber walls can be omitted from the field model.
+Nonlinear screening depends on the density and boundaries of the entire apparatus. Include walls, source, supports and residual gas [R2].
+Negative pressure alone specifies a buildable repulsive device.
+A finite apparatus requires a complete stress-energy distribution, boundary stresses, a consistent spacetime solution and stability analysis. A cosmological equation of state is not a construction prescription.
+An apparent weight reduction establishes gravity modification.
+Electromagnetic forces, source-stage motion, tilt and thermal drift can imitate it. Measure freely falling probes, source geometry and environmental response; demand independent replication.
+What would count as anti-gravity?
+Define the target operationally: a controlled source produces an acceleration away from itself, attributable to gravity or a specified new universal interaction, after conventional forces and metrology artifacts have been bounded. Ordinary upward attraction toward a mass above a probe does not meet this definition. Electromagnetic levitation can support a body but does not reverse its gravitational coupling.
+Gravity shielding is a separate hypothesis: an intervening device changes the response to an external mass after the device’s own Newtonian field is included. The baseline experiment does not test Earth-gravity shielding directly. Such a claim needs a separate source–shield–probe geometry and a quantitative shielding law.
+Limit of scale arguments
+A point-source estimate M = ar²/G gives about 1.47 × 10¹¹ kg for a = 9.81 m/s² at r = 1 m. This is an illustrative Newtonian mass requirement, not a universal bound on every proposed geometry. Likewise, vacuum-energy estimates for de Sitter-like models cannot be treated as bills of materials for finite laboratory devices. These corrections narrow unsupported claims; they do not supply a missing material or mechanism.
+2. Conditional model and force-sign gate
+For a canonical chameleon scalar, take a positive field φ, positive index n and matter coupling A(φ) = exp(βφ/Mₚ). In the following field equations use natural units ℏ = c = 1; Mₚ is the reduced Planck mass and ρ is nonrelativistic matter energy density. The gravitational background remains weak and approximately static. [R2, R5]
+V(φ) = Λ⁴ + Λ⁴⁺ⁿ/φⁿ     ;     Veff(φ) = V(φ) + ρA(φ)
+∇²φ = −nΛ⁴⁺ⁿ/φⁿ⁺¹ + (β/Mₚ)ρ exp(βφ/Mₚ)
+For βφ/Mₚ ≪ 1 and positive β, the approximate equilibrium field in homogeneous matter is φmin = [nΛ⁴⁺ⁿMₚ/(βρ)]¹⁄⁽ⁿ⁺¹⁾. The local squared effective mass is the second derivative of Veff. Density-dependent field profiles can suppress the response of macroscopic objects; do not assign an unscreened charge to every atom or source without checking the selected parameter point.
+aφ = −q c² ∇ ln A(φ)  ≈  −q c²(β/Mₚ)∇φ
+The acceleration expression is in SI when φ and Mₚ use the same energy units and the gradient is per metre; q is an effective screening factor only where that reduced description is valid. A fully resolved nonlinear source calculation should not then be multiplied by a second source-screening factor.
+Why this does not predict repulsion
+U(r) = −Gmₛmₜ[1 + α exp(−r/λ)]/r
+α = 2βₛβₜqₛqₜ  ≥ 0   for universal, same-sign couplings
+In the linear weak-field regime the Yukawa correction is attractive for α ≥ 0. Screening reduces the effective response; it does not reverse that sign. Opposite couplings could change the sign, but are not the universal model above and would require a separately specified, stable theory and compatibility with composition tests. The Yukawa expression is a sign and limiting-case check, not a substitute for a nonlinear chamber solution. [R2, R5]
+Model admission criteria
+Start with n = 1 as a modeling case, not a favored truth. Scan Λ and β only after recording published bounds and their assumptions. Accept a science benchmark only if it is not already excluded under the same model and is distinguishable in this apparatus. If no such benchmark survives, stop the new-physics build or retain it explicitly as a metrology demonstrator. No viable benchmark is claimed in this revision.
+3. Reference apparatus and interfaces
+Reference geometry: two synchronized ⁸⁷Rb interferometers sense horizontal acceleration along x. The test cloud has its fountain apex at (0, 0, 0); the reference cloud is at (0, 0.20 m, 0). A solid aluminum sphere of radius 0.025 m is parked at (±0.035 m, 0, +0.030 m). Its bottom is 5 mm above the apex beam axis. Require a ≤2 mm vertical beam radius and verify clipping over both atom paths. The apex-to-surface gap is 21.1 mm. Full clearance review remains required.
+Subsystem
+Preliminary specification / interface
+Atom preparation
+Two synchronized laser-cooled ⁸⁷Rb ensembles; target 10⁵ detected atoms per channel per shot and contrast 0.30. Verify temperature, cloud extent and velocity distribution experimentally.
+Interrogation
+Horizontal Raman beams near 780 nm; π/2–π–π/2 pulses at 0, T, 2T; T = 50 ms. Switch between lower (−12.3 mm) and apex beam paths. Share timing and a mechanically common retroreflection reference; calibrate each path’s phase and wavefront.
+Vacuum and source
+UHV-compatible chamber accommodating both clouds, trajectories and beam access. Initial operating-pressure target ≤10⁻⁹ mbar, contingent on atom lifetime, outgassing and field modeling; not proof of force isolation.
+Source assembly
+Weighed and surveyed 50 mm-diameter aluminum sphere on a remotely actuated vacuum-compatible carriage. Survey the complete moving assembly, not just the sphere.
+Position metrology
+Independent source encoders plus optical survey of cloud trajectories; provisional relative source/cloud coordinate uncertainty ≤10 µm in the science fit.
+Environmental sensing
+Mirror acceleration, platform tilt, magnetic field and gradients, temperatures, residual-gas pressure, source position, Raman power and frequency; timestamp with the shot record.
+Control / data
+Balanced randomized source states and Raman directions; immutable raw shot records, calibration versions, state labels and blinded analysis offset.
+Mechanical layout constraints
+The source must transfer between sides only when no interrogation is occurring, with a retracted waypoint clear of atoms and beams. Lock out laser interrogation until measured vibration settling meets its allocation. Source mounts, bellows and cables can dominate the state-dependent Newtonian field or transmit motion; their CAD, density and surveyed position are required inputs. This is a functional layout, not an approved mechanical drawing.
+4. Predicted signal and sensitivity
+For instantaneous pulses and sufficiently small path separation, the acceleration response is Φ = k_eff ∫₀²ᵀ w(t)aₓ[r(t)]dt, with w(t) = t for 0 ≤ t ≤ T and w(t) = 2T − t for T < t ≤ 2T. Constant acceleration gives Φ = k_eff aT². Use a full phase calculation if gradients across the separated arms or finite pulses matter.
+k_eff ≈ 4π/(780 nm) = 1.611 × 10⁷ m⁻¹;    k_eff T² = 4.028 × 10⁴ s²/m
+At a vertical fountain apex midway through interrogation, z(t) = −g(t − T)²/2. The cloud lies 12.3 mm below the apex at the first and last pulses. The sphere’s horizontal field therefore varies during the shot; its apex value must not be used as the final prediction.
+M = (4π/3)R³ρAl = 0.1767 kg  for  R = 0.025 m, ρAl = 2700 kg/m³
+aₓ,N(t) = GMxₛ/[xₛ² + y² + (z(t) − zₛ)²]³⁄²;   zₛ = 0.030 m
+For xₛ = +0.035 m, the apex test-channel acceleration is 4.21 × 10⁻⁹ m/s². The reference also responds: its apex x acceleration is about 4.77 × 10⁻¹¹ m/s². This few-nanometres-per-second-squared signal is a Newtonian calibration target, not an anomalous-force prediction. Integrate both trajectories and every moving part for the actual baseline.
+Signed estimator
+dₛ = (Φtest,ₛ − Φref,ₛ)/(k_eff T²);    D = (mean d₊ − mean d₋)/2
+Here phase signs have first been normalized for Raman direction, and s denotes source side. Define positive D as attraction toward the switched source. Fit the residual D − DN with geometry and environmental nuisance parameters. A negative residual alone is not proof of net repulsion: it may mean less attraction than modeled.
+Ideal statistical floor—not an achieved specification
+σΦ = 1/(C√Nat) = 0.01054 rad;    σd = √2 σΦ/(k_eff T²) = 3.70 × 10⁻⁷ m/s²
+Assuming independent projection-limited channels, equal populations in the two source states, no additional noise and N total accepted paired shots, σD = σd/√N. Reaching 10⁻⁹ m/s² requires about 1.37 × 10⁵ shots. At an assumed one-second cycle this is 38 hours of accepted data, before settling, reversals, calibration and rejected shots. The source-motion cycle may be much slower. Correlated drift can invalidate the √N extrapolation; measure Allan deviation and block stability.
+5. Field solver and engineering verification
+No scalar-field forecast is reported here. Before hardware procurement, implement a 3D finite-element or finite-volume solution for the nonlinear boundary-value problem. Chamber geometry materially affects screening; published work provides an essential validation reference [R2].
+Stage
+Required output and acceptance test
+Geometry and units
+Versioned CAD-to-density map including source, support, chamber walls, windows and gas. Convert SI mass density to natural-unit energy density explicitly; unit-test conversions with a dimensional reference.
+Boundary treatment
+Model dense walls and external environment. Derive exterior equilibrium conditions from the assumed ambient density. Enlarge the outer domain until the predicted differential phase changes by <1%.
+Nonlinear solution
+Solve both source states; use positivity-preserving variables or continuation where needed. Record residuals, mesh and solver tolerances; reject nonconverged solutions.
+Verification
+Recover homogeneous φmin, zero gradient in uniform equilibrium, and an analytic weak-field Yukawa limit. Refine mesh until the observable changes by <1%; independently reproduce one published geometry.
+Atom response
+Propagate the measured cloud distribution and evaluate the interferometer phase. Resolve atomic screening or justify its approximation; compare point-probe and finite-cloud results.
+Science reach
+Fit simulated data with surveyed-geometry priors and measured noise covariance. Compare confidence regions with current exclusions using identical model conventions.
+Minimal computational sequence
+For each admitted parameter point: create the density map for each source state; solve for φ; compute Newtonian gravity from the full mass map; evaluate both channel phases over their trajectories; apply the same estimator used for data; perturb geometry and environmental inputs; store predicted signal and covariance. Preserve input hashes and solver versions with each output.
+Required completion package before fabrication release
+Before fabrication release, deliver reviewed CAD and optical layouts, clearance and UHV checks, dummy-rig settling tests, wiring/timing diagrams, safety approval, field forecasts and vendor quotations. Numerical tolerances above are proposed, not achieved; tighten them wherever the measurement budget requires.
+6. Error budget and rejection of false positives
+The following are proposed equivalent-acceleration uncertainty allocations for the final source-switched estimator, not measured performance. Units in the middle column are 10⁻¹⁰ m/s². Statistical uncertainty is budgeted separately at 10 units.
+Effect
+Allocation
+Verification / mitigation
+Source-correlated vibration / tilt
+1.0
+Dummy-motion tests, mirror sensors, measured settling, tilt transfer function; include Earth-gravity projection.
+Wavefront / trajectory coupling
+0.8
+Wavefront mapping, cloud imaging, velocity and temperature scans; independently calibrate each optical path.
+Magnetic gradients
+0.5
+Magnetically insensitive mF = 0 states, bias-field scans, map quadratic Zeeman shifts and source susceptibility.
+Differential light shifts
+0.5
+Raman intensity and detuning scans; pulse-power logging, beam reversal and extrapolation.
+Newtonian mass / geometry model
+0.3
+Weigh and survey the complete moving assembly; propagate correlated position and density uncertainties.
+Thermal / pressure effects
+0.4
+Temperature and pressure interventions within operating range; matched dwell times and source-temperature monitoring.
+Rotation / transverse velocity
+0.4
+Measure launch velocity and Coriolis response; reverse appropriate launch offsets.
+Unallocated reserve
+0.8
+Retain until commissioning identifies omitted couplings.
+If genuinely independent, these entries combine to 1.78 × 10⁻¹⁰ m/s² in quadrature, below the 2 × 10⁻¹⁰ target. Their linear sum is 4.7 × 10⁻¹⁰ m/s². Use measured covariance or a conservative correlated bound; independence must not be assumed to make a budget pass.
+Two demanding cross-checks
+A source-correlated uncompensated tilt produces approximately gδθ along a horizontal axis. An allocation of 10⁻¹⁰ m/s² would require δθ ≈ 10⁻¹¹ rad without common-mode rejection. That is a severe requirement, not a credible passive-alignment specification. Demonstrate the dual-channel rejection transfer function and residual calibration experimentally before claiming feasibility.
+For the sphere-only apex estimate, a 10 µm radial error at fixed direction gives roughly 2aδr/r = 1.83 × 10⁻¹² m/s². This does not validate the whole mass model: independent coordinate errors, carriage movement, reference response, trajectory drift and density variations must also be included.
+7. Experimental protocol and inference
+Commissioning and control sequence
+Commission each interferometer without source motion. Measure contrast, phase noise, detection linearity and response to deliberately applied mirror acceleration. Commission both channels together and measure frequency-dependent vibration rejection. Then move an inert dummy carriage to quantify motion-correlated phase and settling before adding the calibrated source.
+Acquire balanced randomized blocks of source-left/source-right and ±k_eff states. Include source-parked blocks, source-distance scans and calibrated source substitutions. Blind the science estimator using an independently held analysis offset; the offset is not a physical calibration. Separately inject known phase perturbations into the optical system to verify recovery and sign conventions.
+Reversing k_eff changes the phase sign of genuine acceleration but also that of many spurious accelerations. It is a diagnostic, not a proof of gravitational origin. Likewise, pressure independence or a nonmagnetic source alone does not eliminate all conventional interactions. Combine controls with measured response coefficients and uncertainties.
+Model fit and stopping rule
+Dᵢ = DN(geometryᵢ) + Dφ(parameters, geometryᵢ) + Σⱼ bⱼXᵢⱼ + εᵢ
+Pre-register the source configurations, fit model, nuisance priors, exclusions, analysis cuts and maximum data-taking exposure. Estimate correlated noise from control runs; use a covariance-aware likelihood. Propagate survey uncertainty rather than subtracting a fixed perfect Newtonian value. Calibrate interval coverage with simulated data when parameters lie on boundaries or noise is non-Gaussian.
+Report parameter confidence regions for the specific model and geometry. A candidate anomaly must survive held-out blocks, alternative reasonable analyses and deliberate interventions on likely artifacts. Use a predeclared discovery threshold—for example a globally corrected 5σ criterion—as one gate, not as a substitute for systematic-error review or independent replication. Do not stop opportunistically when a favorable fluctuation appears.
+Data product for reproducibility
+For every shot retain timestamp, source state and measured coordinates, Raman direction, pulse timing, raw atom counts and detection calibration, fitted phase, cloud state, mirror/tilt channels, laser diagnostics, temperature, pressure and rejection flags. Publish analysis code, complete mass model, numerical-field inputs, uncertainty budget and negative results. Record all post-unblinding changes.
+Interpreting the outcome
+Agreement with Newtonian gravity validates metrology and constrains admitted models. Extra attraction may support a new-force hypothesis only after controls. Reduced attraction warrants investigation, not an anti-gravity label. Net acceleration away from the source requires a different repulsive model and a new verification campaign.
+8. Development plan and anti-gravity gates
+Gate / indicative effort
+Pass condition
+If it fails
+G0: theory and simulation; 2–4 months
+A stable, not-already-excluded benchmark produces a resolvable signal in the full chamber model; independent theory review.
+Do not claim new-physics reach; redesign or limit scope to calibration research.
+G1: subsystem feasibility; 3–6 months
+Atom contrast and accepted-shot rate support the noise forecast; dummy source motion passes settling and common-mode tests.
+Revise geometry or interrogation method before completing the chamber.
+G2: integrated calibration; 4–8 months
+Recover predicted Newtonian source response across distances within the combined uncertainty; meet allocated systematic budget.
+Investigate mass model and environmental coupling; do not unblind science data.
+G3: blinded search; 2–6 months
+Execute pre-registered exposure, diagnostics and confidence analysis.
+Publish an honest limit or inconclusive result; do not relabel it as shielding.
+G4: independent replication; separately scoped
+Independent apparatus reproduces sign, magnitude and distance dependence with different dominant systematics.
+Keep the anomaly provisional.
+Durations are overlapping planning assumptions, excluding procurement delays. Required expertise: atomic physics, UHV/mechanics, metrology/controls and numerical field theory. No vendor quotation or funded schedule is implied.
+What must happen before an actuator program
+Specify a stable, experimentally allowed repulsive interaction. Reproduce its outward acceleration with multiple probe materials; map range and controllability. Bound conventional couplings and measure source/support reactions, including supplies, fields and environmental momentum exchange in laboratory energy–momentum accounting.
+Only then study acceleration per source mass, power, duty cycle, thermal load, bandwidth, payload scaling and fail-safe behavior. An attractive scalar discovery would not pass the repulsion gate. Section 2 provides no justified direct path from this model to a repulsive actuator.
+Safety and release boundary
+Require institutional safety review for lasers, interlocks, vacuum/bakeout, reactive alkali sources, electrical supplies and moving-source hazards. Commission only under approved procedures and component ratings—not from this paper alone. No exotic-energy source is required.
+9. Sources, provenance and reproducible checks
+Primary papers and author manuscripts below support the model and experimental precedent. The proposed geometry, allocations, calculations and gates are this paper’s engineering synthesis; they are not performance claims from those sources. Links were checked for this revision on 5 September 2026. This bibliography is selective, not a complete literature database.
+R1. Hamilton et al. (2015), Atom-interferometry constraints on dark energy. Science 349, 849–851. Experimental constraints, not a detection.
+R2. Elder et al. (2016), Chameleon Dark Energy and Atom Interferometry. Physical Review D 94, 044051. Nonlinear chamber modeling and screening.
+R3. Sabulsky et al. (2019), Experiment to Detect Dark Energy Forces Using Atom Interferometry. Physical Review Letters 123, 061102. Null new-force search.
+R4. Panda et al. (2024), Measuring gravitational attraction with a lattice atom interferometer. Nature 631, 515–520; linked manuscript titled Measuring gravity by holding atoms. Newtonian-consistent measurement and screened-force bounds.
+R5. Banks et al. (2025 manuscript), Searching for screened scalar forces with long-baseline atom interferometers. Future sensitivity forecast and pulse-sequence/source design, not a demonstrated force.
+R6. Burrage and Sakstein (2018), Tests of Chameleon Gravity. Living Reviews in Relativity 21, 1. Review for model conventions and constraints.
+Independent arithmetic checks
+Use SI values G = 6.67430 × 10⁻¹¹ m³ kg⁻¹ s⁻², g = 9.81 m/s², λlaser = 780 × 10⁻⁹ m, T = 0.050 s, C = 0.30 and Nat = 100,000. Compute M = 4πR³ρ/3; aₓ,apex = GMxₛ/(xₛ² + zₛ²)³⁄²; σd = √2/(C√Nat k_eff T²); Nrequired = (σd/10⁻⁹)². One second per accepted paired shot is assumed, not guaranteed.
+For trajectory integration, apply a converged quadrature to w(t) times the sphere field in Section 4, subtract the y = 0.20 m reference, then include the full assembly and actual atomic trajectories. The apex figures are deliberately labeled approximations. No simulated scalar signal, residual detection or experimental dataset is supplied.
+Conclusion
+The implementable result is a precision experiment with falsifiable hypotheses and explicit stop conditions. A working anti-gravity device remains an unresolved physics objective. The next technically justified deliverable is a validated chamber-field forecast and subsystem feasibility review—not a claimed repulsive machine.

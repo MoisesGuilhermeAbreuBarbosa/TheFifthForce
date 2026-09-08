@@ -1,0 +1,14 @@
+{
+  "project": "OPEN FIELD",
+  "revision": "rev02",
+  "status": "No anomalous force detected in recovered fifth-force reanalysis",
+  "investigation_count": 150,
+  "source_count": 76,
+  "mapping_count": 3000,
+  "downloads": {
+    "research_atlas": "/assets/data/research-atlas.json",
+    "url_registry": "/assets/data/urls.json",
+    "database": "/assets/data/Anti_Gravity_Research_Database.xlsx",
+    "panda_bundle": "/assets/downloads/panda_fifth_force_reanalysis.zip"
+  }
+}

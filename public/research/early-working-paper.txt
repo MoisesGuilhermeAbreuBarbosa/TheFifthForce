@@ -1,0 +1,161 @@
+ARCHIVED DRAFT — NOT PEER REVIEWED. Later reanalysis and limitations take precedence.
+
+FOUNDATIONAL PHYSICS
+Toward Genuine Gravity Modification
+A constraint-driven working paper on the physical principles required for “anti-gravity”
+Version 1.0  |  5 September 2026
+Research position
+No reproducible experiment has demonstrated shielding, reversal, or controllable reduction of gravity. The viable scientific task is therefore to identify the required source terms, quantify their scale, and design experiments capable of discovering a new coupling without confusing it with ordinary forces.
+
+Abstract
+This paper asks a narrow question: what physical principle would have to be true for a laboratory system to reduce or reverse gravitational acceleration without supporting the test body through electromagnetism, pressure, buoyancy, mechanical contact, or expelled momentum? General relativity makes the answer precise. Gravity is spacetime geometry sourced by the complete stress-energy tensor. Genuine anti-gravity therefore requires either (i) an engineered stress-energy distribution whose geodesics accelerate away from the source, or (ii) a new field or coupling beyond general relativity that produces a controllable repulsive gravitational response. Existing evidence closes the easiest shortcuts: antimatter falls downward; composition-dependent free fall is constrained near 10⁻¹⁵; steady electromagnetic devices show no anomalous gravity coupling; and quantum negative energy is tightly limited. The most defensible research program is not another thrust balance around a proprietary device. It is a staged, open experiment targeting a modulated source term, with dual-species free-fall sensing, full environmental channels, blind force injection, complete stress-energy accounting, and independent replication.
+Executive conclusion
+Known physics contains repulsive gravitational solutions, but no laboratory-scale source. Cosmic acceleration and some exact spacetime metrics demonstrate mathematical possibility; they do not supply an engineerable material or field configuration.
+Ordinary positive electromagnetic energy does not cancel gravity. It contributes positive stress-energy and, in standard general relativity, gravitates. Magnetic or electric levitation is force balance, not modification of gravity.
+The only credible frontier pathways are constrained: controlled negative stress-energy or sufficiently negative pressure; a new screened scalar/tensor coupling; or an unexpected enhancement of gravitomagnetic coupling. Each must survive strict existing bounds.
+A useful first objective is not 1 g. It is a reproducible differential acceleration with the symmetry, distance law, composition dependence, and conservation behavior of a new gravitational field.
+1. Operational definition
+For this program, “anti-gravity” means a controlled change in the gravitational trajectory of a freely responding test mass. The test must distinguish the following levels:
+AG-0: support-force levitation. The object is held up by magnetic, electric, acoustic, aerodynamic, buoyant or mechanical force. Gravity is unchanged.
+AG-1: inertial or effective-mass analogue. A condensed-matter dispersion or feedback system behaves mathematically as if mass were negative. This is not negative gravitational charge.
+AG-2: anomalous noncontact force. A residual force remains after known couplings are modeled. It is an anomaly until a gravitational scaling law is demonstrated.
+AG-3: modified passive response. A freely falling body responds differently to an external gravitational field.
+AG-4: engineered gravitational source. The apparatus creates a measurable spacetime or new-field gradient that acts on external neutral test bodies.
+AG-5: gravity shielding or reversal. The apparatus reduces, screens, or reverses a pre-existing gravitational field in a spatially resolved and independently replicated way.
+2. The governing constraint: stress-energy, not “energy” alone
+Einstein’s field equation relates curvature to the full stress-energy tensor:
+Gμν + Λgμν = (8πG/c⁴) Tμν
+This blocks a common mistake: inserting a large voltage, magnetic field, rotation rate or resonant power into an apparatus does not imply a useful gravitational field. One must calculate every component of Tμν—energy density, momentum density, pressure and shear—including the power supply, supports, shields and reaction structure. In a weak-field perfect-fluid limit, the active source is proportional to rho + 3p/c². Positive pressure strengthens attraction. Repulsion requires sufficiently negative pressure, approximately p < −rho c²/3, or another source that violates the usual energy conditions.
+3. Quantitative scale of the problem
+Two deliberately simple estimates show the scale. A Newtonian source producing acceleration a at distance R has an equivalent mass M ≈ aR²/G. A locally de-Sitter-like repulsive field has a ≈ Λc²R/3 and an equivalent mass density rhoΛ = Λc²/(8πG). Combining these gives:
+M ≈ aR²/G    and    rhoΛ ≈ 3a/(8πGR)
+Quantity
+Expression
+1 g at R = 1 m
+Meaning
+Equivalent source mass
+aR²/G
+1.47 × 10¹¹ kg
+Mountain-scale effective source at one metre
+Effective cosmological constant
+3a/(c²R)
+3.27 × 10⁻¹⁶ m⁻²
+About 10³⁶ times the observed cosmic value
+Equivalent mass density
+3a/(8πGR)
+1.75 × 10¹⁰ kg/m³
+White-dwarf-scale density
+Equivalent energy density
+ρc²
+1.58 × 10²⁷ J/m³
+Far beyond laboratory field energy
+Interpretation. These estimates do not prove a theorem of impossibility. They show that a successful principle must either access exotic stress-energy, exploit a new coupling not suppressed by G/c⁴, or reveal a collective enhancement that survives existing precision tests.
+4. Candidate physical principles
+4.1 Engineered negative stress-energy or tension
+Quantum field theory permits local energy density below the reference vacuum in effects such as Casimir configurations and squeezed states. This is the most direct known route to the sign of source needed for repulsive curvature. The obstacle is not merely small amplitude. Quantum energy inequalities restrict the product of negative magnitude and duration, while the complete apparatus generally retains positive total energy. A valid proposal must compute the renormalized stress tensor, not multiply a Casimir pressure by an arbitrary volume.
+Researchable question: can a periodically modulated sub-vacuum state produce a phase-locked gravitational signal consistent with its calculated Tμν, even if the expected signal is far below practical propulsion levels? This is a metrology question first, not a vehicle concept.
+4.2 New screened scalar or tensor interaction
+Many extensions of general relativity add a scalar degree of freedom that mediates a fifth force. Chameleon and symmetron mechanisms can suppress that force in dense environments while allowing it in vacuum. Such a field could in principle create an upward acceleration if its gradient and coupling had the proper sign. The pathway is scientifically legitimate because it makes parameterized predictions, but equivalence-principle, inverse-square-law, atom-interferometry and astrophysical tests already constrain much of the space.
+Researchable question: is there an unexplored screened regime in which a modulated cavity geometry changes the scalar profile while Newtonian gravity remains nearly constant? The decisive observable is a differential acceleration with predicted vacuum, distance, geometry and composition scaling.
+4.3 Gravitomagnetism and mass-current enhancement
+General relativity predicts frame dragging from mass currents. It is real, but its laboratory coupling is suppressed by G/c². Rotating-superconductor experiments motivated claims of enormous enhancement; those signals have not achieved robust independent confirmation and are vulnerable to vibration, helium flow and sensor coupling. The useful residue of this history is an experimental symmetry: a genuine gravitomagnetic term reverses with angular momentum and has a calculable vector geometry.
+Researchable question: can redundant quantum and classical inertial sensors place substantially better, geometry-resolved bounds on anomalous mass-current coupling in a cryogenic rotor? A positive result must appear outside magnetic and mechanical near fields and scale with angular momentum rather than motor current.
+4.4 Antimatter as negative gravitational charge
+The simple hypothesis that antimatter falls upward is no longer a viable shortcut. ALPHA-g observed antihydrogen behaving consistently with downward gravitational attraction and excluded a large sign reversal. Precision measurements remain valuable because small deviations would signal new physics, but antimatter cannot presently be treated as a source of negative gravitational mass.
+4.5 Metric engineering and warp geometries
+Alcubierre-type and later warp metrics are inverse problems: specify a geometry, then use Einstein’s equation to infer the stress-energy required. They prove that certain geometries can be written mathematically. They do not show how the source is produced, assembled from initially ordinary matter, stabilized or controlled. Generic superluminal warp geometries face null-energy-condition and causality problems. Positive-energy subluminal constructions are useful theoretical classifications but are not anti-gravity drives.
+5. What previous work got wrong—and the correction
+Category error
+Mistake: Levitation, effective negative mass and reduced apparent weight were labeled anti-gravity.
+Correction: Require a freely responding neutral test mass and separately measure all support forces.
+Incomplete system boundary
+Mistake: Only the active component was analyzed, excluding power cables, thermal expansion, field return paths and supports.
+Correction: Define a closed control volume and account for stress-energy and momentum flux across every boundary.
+Signal-scale artifacts
+Mistake: Thermal, magnetic, electrostatic, vibrational and residual-gas forces were at or above the claimed signal.
+Correction: Measure every environmental channel; use geometry and polarity reversals that distinguish candidate symmetries.
+Theory after anomaly
+Mistake: A new theory was fitted after a small unexplained signal appeared.
+Correction: Preregister the predicted amplitude, phase, distance law, composition law and falsification thresholds.
+No valid null twin
+Mistake: Off states changed temperature, vibration or current, so subtraction created a false residual.
+Correction: Use dissipative dummy loads and mechanically identical null sources that preserve ordinary backgrounds.
+No independent replication
+Mistake: Positive results were iteratively optimized by the originating team.
+Correction: Transfer sealed hardware, blinded state labels and raw-data format to an independent laboratory.
+Ignoring negative evidence
+Mistake: Null tests and equivalence-principle limits were not propagated into model parameters.
+Correction: Maintain a living constraint database and reject models already incompatible with upper bounds.
+6. Proposed working hypothesis
+The strongest research hypothesis that is both nontrivial and experimentally falsifiable is not “a device cancels gravity.” It is:
+A controlled, spatially modulated source configuration produces a differential acceleration on electrically neutral, freely responding test masses that cannot be explained by standard electromagnetic, mechanical, thermal, gas-dynamic or Newtonian gravitational couplings, and whose scaling is consistent with a parameterized extension of the gravitational action.
+The preferred target is a screened scalar interaction because it offers a calculable laboratory signature without first assuming macroscopic negative energy. The experiment should nevertheless be theory-agnostic enough to publish upper bounds on scalar, composition-dependent and anomalous stress-energy couplings.
+7. Proposed experiment: differential free-fall field test
+7.1 Instrument concept
+Two co-located atom interferometers using different atomic species, or one atom interferometer plus an optically levitated neutral dielectric sensor, positioned beside a modulated source chamber.
+A source chamber whose geometry changes the predicted scalar-field boundary condition while keeping total mass, temperature and electromagnetic power as constant as possible.
+A Newtonian compensation mass that suppresses ordinary gravitational modulation at the sensor, leaving a null channel for the proposed field.
+Independent fluxgate, electric-field, vibration, tilt, pressure, temperature, acoustic and radiation monitors sampled synchronously.
+A hardware randomizer that encodes source states; analysts receive blinded labels until calibration and exclusion cuts are frozen.
+7.2 State-reversal matrix
+State change
+New gravity / scalar
+Magnetic artifact
+Thermal artifact
+Mechanical artifact
+Source geometry A↔B
+Predicted change
+May change; measure
+Hold power constant
+Balance motion
+Polarity reversal
+Often unchanged
+Reverses
+Nearly unchanged
+Nearly unchanged
+180° apparatus rotation
+Transforms spatially
+Transforms by field geometry
+Stays with hardware
+Stays with hardware
+Mass-composition swap
+Model-dependent
+No neutral-mass law
+No fundamental law
+No fundamental law
+Vacuum pressure sweep
+Screening-model dependence
+Weak if shielded
+Changes cooling
+Changes gas force
+7.3 Analysis and success criteria
+Primary outcome: differential acceleration amplitude at the preregistered modulation frequency and phase.
+Artifact model: simultaneous multichannel regression fixed using calibration periods, then applied without retuning to blinded science periods.
+Discovery gate: at least 5σ local significance, stable effect size across time blocks, correct reversal symmetries, and no environmental channel capable of explaining the residual within uncertainty.
+Physics gate: one parameter set must fit distance, geometry, vacuum and composition scans. A residual without this consistency is an empirical anomaly, not anti-gravity.
+Establishment gate: independent replication using transferred hardware or an independently built apparatus, with compatible effect size and preregistered combined analysis.
+8. Research priorities
+Priority 1 — Theory/constraint map. Translate existing equivalence-principle, inverse-square, atom-interferometry and astrophysical limits into one common parameter space for the candidate scalar interaction.
+Priority 2 — Background-limited instrument. Demonstrate that blind injected accelerations can be recovered below the target sensitivity while source-state changes remain hidden.
+Priority 3 — Source modulation. Design a geometry change that maximizes the candidate field contrast while minimizing Newtonian, magnetic and thermal differences.
+Priority 4 — Open replication package. Publish CAD, wiring, control logic, raw time series, calibration injections and analysis code before any extraordinary interpretation.
+Stop rule. If the predicted coupling is already excluded, if backgrounds exceed the target by more than two orders of magnitude without a credible subtraction path, or if the signal fails reversal tests, stop and redesign rather than reinterpret.
+9. Final assessment
+A real anti-gravity technology would require new control over the source of spacetime curvature, not a clever way of pushing against air, fields or laboratory supports. General relativity already tells us what must be computed; precision experiments tell us how small any departure must be. The most credible path forward is therefore conservative in interpretation and aggressive in measurement: search for a new, modulated gravitational coupling in a regime where screening could hide it from previous tests, and design the apparatus so that conventional explanations are measured rather than argued away. If that program returns a null result, it still advances the field by closing parameter space. If it produces a replicated signal with gravitational scaling, it would be the first legitimate foothold toward gravity modification.
+References and source links
+1. Einstein equations and source terms — D. Tong, General Relativity, Section 4. https://www.damtp.cam.ac.uk/user/tong/gr/grhtml/S4.html
+2. Alcubierre, “The warp drive: hyper-fast travel within general relativity” (1994). https://doi.org/10.1088/0264-9381/11/5/001
+3. Pfenning and Ford, “The unphysical nature of warp drive” (1997). https://inspirehep.net/literature/440391
+4. Ford, “Negative Energy Densities in Quantum Field Theory” (2010). https://arxiv.org/abs/0911.3597
+5. Burrage and Sakstein, “Tests of Chameleon Gravity” (2018). https://doi.org/10.1007/s41114-018-0011-x
+6. MICROSCOPE Collaboration, final equivalence-principle results (2022). https://doi.org/10.1103/PhysRevLett.129.121102
+7. ALPHA Collaboration, gravity on antihydrogen (2023). https://doi.org/10.1038/s41586-023-06527-1
+8. Tajmar et al., steady EM–gravity coupling null search (2024). https://doi.org/10.1038/s41598-024-70286-w
+9. Santiago et al., generic warp drives and null energy condition (2022). https://doi.org/10.1103/PhysRevD.105.064038
+10. Fuchs et al., gravity measured with a levitated milligram mass (2024). https://doi.org/10.1126/sciadv.adk2949
+11. Bose et al., spin entanglement witness for quantum gravity (2017). https://doi.org/10.1103/PhysRevLett.119.240401
+12. Martín-Martínez and Perche, limits of gravity-mediated entanglement inference (2023). https://doi.org/10.1103/PhysRevD.108.L101702
+13. NASA, Assessing Potential Propulsion Breakthroughs (2006). https://ntrs.nasa.gov/api/citations/20060000022/downloads/20060000022.pdf
+14. NASA, Responding to Mechanical Antigravity (2006). https://ntrs.nasa.gov/api/citations/20070004897/downloads/20070004897.pdf
+Scope note
+This is a working research paper, not proof of a device. The accompanying database contains the wider evidence register, including null results and frequently misclassified “anti-gravity” claims, so future hypotheses can be checked against prior failure modes. The literature search is broad but cannot be literally exhaustive; sources should be updated as new peer-reviewed results appear.
