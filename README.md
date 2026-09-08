@@ -18,7 +18,12 @@ Source pages include:
 - [Software Documentation](wiki/Software-Documentation.md)
 - [Research Methodology](wiki/Research-Methodology.md)
 - [Anti-Gravity](wiki/Anti-Gravity.md)
+- [QAGRA — Quantum-Assisted Gravitational Research Architecture](wiki/QAGRA.md)
 - [Reference Library](wiki/References.md)
+
+## QAGRA research software
+
+The [`qagra/`](qagra/) package is the project's quantum-assisted gravity-research prototype. It includes a physics digital twin, anomalous-force hypothesis library, source-superposition/weak-value model, classical benchmarks, hybrid quantum-AI circuits, synthetic datasets, model ranking, and a hash-chained evidence ledger. QAGRA is explicitly null-first: algorithmic anomalies are not treated as proof of anti-gravity.
 
 ## Research principle
 

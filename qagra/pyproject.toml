@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qagra"
+version = "0.1.0"
+description = "Quantum-Assisted Gravitational Research Architecture"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26"]
+license = {text = "GPL-3.0-or-later"}
+authors = [{name = "The Fifth Force contributors"}]
+keywords = ["quantum-computing", "gravity", "quantum-sensing", "anomaly-detection", "scientific-computing"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+qiskit = ["qiskit>=2"]
+
+[project.scripts]
+qagra = "qagra.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
