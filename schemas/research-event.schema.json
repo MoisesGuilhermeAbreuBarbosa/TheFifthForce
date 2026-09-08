@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thefifthforce.org/schemas/research-event.schema.json",
+  "title": "The Fifth Force ResearchEvent",
+  "description": "Privacy-preserving record that a research interaction occurred on a project-controlled surface.",
+  "type": "object",
+  "required": ["event_id", "event_type", "timestamp", "session_id", "actor", "research_context", "provenance", "privacy"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "parent_event_id": {"type": ["string", "null"]},
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "search_performed",
+        "search_result_opened",
+        "wiki_page_read",
+        "research_area_opened",
+        "source_opened",
+        "claim_opened",
+        "experiment_opened",
+        "dataset_opened",
+        "video_opened",
+        "citation_followed",
+        "api_query",
+        "agent_manifest_read",
+        "research_receipt_submitted",
+        "contribution_started",
+        "contribution_submitted"
+      ]
+    },
+    "timestamp": {"type": "string", "format": "date-time"},
+    "session_id": {"type": "string", "minLength": 1},
+    "actor": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {"type": "string", "enum": ["human", "ai-model", "autonomous-agent", "unknown"]},
+        "name": {"type": ["string", "null"]},
+        "model": {"type": ["string", "null"]},
+        "organization": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "research_context": {
+      "type": "object",
+      "properties": {
+        "query": {"type": ["string", "null"]},
+        "research_area_ids": {"type": "array", "items": {"type": "string"}},
+        "claim_ids": {"type": "array", "items": {"type": "string"}},
+        "source_ids": {"type": "array", "items": {"type": "string"}},
+        "experiment_ids": {"type": "array", "items": {"type": "string"}},
+        "dataset_ids": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["surface"],
+      "properties": {
+        "surface": {"type": "string", "enum": ["website", "api", "wiki", "agent"]},
+        "referrer": {"type": ["string", "null"]},
+        "user_agent": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "privacy": {
+      "type": "object",
+      "required": ["identity_disclosed", "publicly_visible"],
+      "properties": {
+        "identity_disclosed": {"type": "boolean"},
+        "publicly_visible": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
