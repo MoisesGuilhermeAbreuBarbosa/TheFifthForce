@@ -1,0 +1,74 @@
+name: Publish GitHub Wiki
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'wiki/**'
+      - '.github/workflows/publish-wiki.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-native-wiki
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    name: Publish wiki/ to native GitHub Wiki
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Publish Wiki
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          WIKI_URL="https://x-access-token:${GH_TOKEN}@github.com/${REPOSITORY}.wiki.git"
+          TARGET="${RUNNER_TEMP}/native-wiki"
+
+          rm -rf "$TARGET"
+
+          echo "Attempting to clone native Wiki repository..."
+          if git clone "$WIKI_URL" "$TARGET"; then
+            echo "Native Wiki repository cloned."
+          else
+            echo "Wiki repository has not been initialized yet; attempting first-push initialization."
+            mkdir -p "$TARGET"
+            git -C "$TARGET" init
+            git -C "$TARGET" remote add origin "$WIKI_URL"
+          fi
+
+          # GitHub Wiki pages are flat. Mirror Markdown source while excluding the
+          # repository-only README used during early development.
+          find "$TARGET" -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+          cp -a wiki/. "$TARGET"/
+          rm -f "$TARGET/README.md"
+
+          cd "$TARGET"
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "Native Wiki is already up to date."
+            exit 0
+          fi
+
+          git commit -m "Publish The Fifth Force Wiki from ${GITHUB_SHA}"
+
+          # GitHub's Wiki Git repository conventionally uses master.
+          git branch -M master
+          git push origin master
+
+          echo "Wiki published: https://github.com/${REPOSITORY}/wiki"
