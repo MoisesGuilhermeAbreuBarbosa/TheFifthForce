@@ -16,11 +16,11 @@ export async function POST(request:Request){
   let prompt='';try{const body=await request.json();prompt=String(body?.prompt||'').trim();}catch{return NextResponse.json({error:'Invalid JSON body.'},{status:400});}
   if(prompt.length<12)return NextResponse.json({error:'Describe the physical hypothesis in at least 12 characters.'},{status:400});
   if(prompt.length>6000)return NextResponse.json({error:'Prompt is too long.'},{status:400});
-  const apiKey=process.env.AI_GATEWAY_API_KEY;
-  if(!apiKey)return NextResponse.json({mode:'fallback',hypothesis:fallback(prompt),gatewayError:'AI_GATEWAY_API_KEY is not configured.'});
+  const authToken=process.env.AI_GATEWAY_API_KEY||process.env.VERCEL_OIDC_TOKEN;
+  if(!authToken)return NextResponse.json({mode:'fallback',hypothesis:fallback(prompt),gatewayError:'No AI Gateway API key or Vercel OIDC token is available.'});
   const system='You are the QAGRA hypothesis architect for a null-first gravity-research platform. Convert an idea into a falsifiable research hypothesis without claiming anti-gravity has been observed. Return JSON only with keys: name, family, summary, equation, parameters, predictions, falsification, nuisance, quantumApproach. family MUST be one of: null, repulsive_inverse_square, yukawa, oscillatory, quantum_postselected. Separate physical prediction from inference. Include conventional-force competitors and at least two decisive falsification tests. Quantum computation is an analysis/sensing method, not evidence by itself.';
   try{
-    const response=await fetch('https://ai-gateway.vercel.sh/v1/chat/completions',{method:'POST',headers:{'content-type':'application/json',authorization:`Bearer ${apiKey}`},body:JSON.stringify({model:'openai/gpt-5.6-sol',messages:[{role:'system',content:system},{role:'user',content:`Research idea:\n${prompt}\n\nReturn the JSON object only.`}],stream:false})});
+    const response=await fetch('https://ai-gateway.vercel.sh/v1/chat/completions',{method:'POST',headers:{'content-type':'application/json',authorization:`Bearer ${authToken}`},body:JSON.stringify({model:'openai/gpt-5.6-sol',messages:[{role:'system',content:system},{role:'user',content:`Research idea:\n${prompt}\n\nReturn the JSON object only.`}],stream:false})});
     const result=await response.json();if(!response.ok)throw new Error(result?.error?.message||`Gateway returned ${response.status}`);const text=extractText(result);if(!text)throw new Error('Gateway returned no text.');
     return NextResponse.json({mode:'gateway',hypothesis:sanitize(parseJson(text),prompt)});
   }catch(error){
