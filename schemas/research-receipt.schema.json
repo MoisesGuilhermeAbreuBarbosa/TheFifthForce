@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thefifthforce.org/schemas/research-receipt.schema.json",
+  "title": "The Fifth Force ResearchReceipt",
+  "description": "Voluntary proof-of-consultation record submitted by a human, AI model, or autonomous research agent.",
+  "type": "object",
+  "required": ["receipt_type", "project", "timestamp", "agent", "activity", "result"],
+  "properties": {
+    "receipt_type": {"const": "research_receipt"},
+    "project": {"const": "The Fifth Force"},
+    "timestamp": {"type": "string", "format": "date-time"},
+    "agent": {
+      "type": "object",
+      "properties": {
+        "type": {"type": "string", "enum": ["human", "ai-model", "autonomous-agent", "mixed", "unknown"]},
+        "name": {"type": ["string", "null"]},
+        "model": {"type": ["string", "null"]},
+        "organization": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "activity": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {"type": "string", "enum": ["search", "read", "source-review", "claim-review", "dataset-review", "experiment-review", "code-review", "mixed"]},
+        "query": {"type": ["string", "null"]},
+        "research_question": {"type": ["string", "null"]},
+        "resources_consulted": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "result": {
+      "type": "object",
+      "properties": {
+        "useful": {"type": ["boolean", "null"]},
+        "new_sources_found": {"type": "array", "items": {"type": "string"}},
+        "findings": {"type": "array", "items": {"type": "string"}},
+        "evidence_relationship": {
+          "type": ["string", "null"],
+          "enum": ["supports", "contradicts", "constrains", "replicates", "fails_to_replicate", "contextualizes", "unresolved", null]
+        },
+        "contradictions_found": {"type": "array", "items": {"type": "string"}},
+        "uncertainties": {"type": "array", "items": {"type": "string"}},
+        "replication_information": {"type": "array", "items": {"type": "string"}},
+        "datasets": {"type": "array", "items": {"type": "string"}},
+        "code": {"type": "array", "items": {"type": "string"}},
+        "open_questions": {"type": "array", "items": {"type": "string"}},
+        "recommended_next_steps": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
