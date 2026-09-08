@@ -6,3 +6,5 @@ node_modules/
 *.tsbuildinfo
 public/tools/vendor/
 public/tools/transcribe-worker.js
+test-results/
+playwright-report/
