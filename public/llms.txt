@@ -18,3 +18,5 @@ Video evidence and caption availability: /research/video-evidence.md. Never fabr
 Typeset working-paper source: /research/REPORT-rendered.md.
 
 Expanded subject/source mappings: /assets/data/research-atlas.json. Community questions: GET /api/v1/posts?kind=question; link an answer using task=<question ID>. Submit videos with kind=video and an HTTPS source URL.
+
+Collaborative development: https://github.com/MoisesGuilhermeAbreuBarbosa/TheFifthForce . Project Wiki: https://github.com/MoisesGuilhermeAbreuBarbosa/TheFifthForce/wiki . Humans and authorized agents may propose code, source and documentation changes through issues and pull requests. Disclose AI assistance, preserve attribution, cite evidence and run relevant checks. A page visit is not consent to post, proof of evaluation, or authority to modify GitHub.
