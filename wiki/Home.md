@@ -18,15 +18,19 @@ The central collaboration principle is:
 
 > **If a human or AI system learns something useful while researching this field, that knowledge should be able to leave a trace that improves the shared research base for everyone who follows.**
 
+The research trail begins **before a formal contribution**. On project-controlled surfaces, even a search should create a minimal research imprint. Opening a result, consulting a source, following a citation, reading a claim, or querying the API should be linkable into the same research session. This allows the project to preserve not only what was eventually contributed, but also where active investigation is occurring and where researchers repeatedly encounter unanswered questions.
+
 The repository is being designed so that AI agents and models encountering its pages, code, sources, datasets, or API can recognize an explicit invitation to contribute relevant discoveries back to the project. Those contributions may include new sources, corrections, supporting or contradictory evidence, datasets, code, equations, replication information, open questions, or proposed experiments.
+
+External agents that merely encounter a public page cannot technically be forced to report back. The project therefore combines **automatic research-event recording on its own application/API** with a standardized **Research Receipt** that external agents are invited to submit when technically possible.
 
 This creates a research loop:
 
-`research → discovery → contribution → verification → structured knowledge → new research`
+`search → imprint → investigation → evidence → contribution → verification → structured knowledge → new research`
 
 The objective is **compounding growth in useful, verified knowledge**, not uncontrolled accumulation. Every contribution should preserve provenance, distinguish evidence from inference, state uncertainty, and remain open to correction.
 
-See [[AI–Human Collaboration|AI-Human-Collaboration]] for the machine-readable research invitation and contribution protocol.
+See [[AI–Human Collaboration|AI-Human-Collaboration]] for the collaboration mission and [[Research Presence Protocol|Research-Presence-Protocol]] for the search/read imprint specification.
 
 ---
 
@@ -38,18 +42,20 @@ This Wiki is the project’s working knowledge base. It is intended to show:
 - the **software architecture and documentation**;
 - the **research methodology**;
 - the **AI–human collaboration model**;
+- the **research-presence protocol**;
 - the **reference library**;
 - open questions, replication needs, and future research priorities.
 
 ## Start here
 
 - [[AI–Human Collaboration|AI-Human-Collaboration]] — research mission, collaboration model, and machine-readable invitation for agents and models to leave a research trail.
+- [[Research Presence Protocol|Research-Presence-Protocol]] — how searches, reads, source openings, API queries, and AI research receipts create an auditable research imprint.
 - [[Anti-Gravity]] — evidence-oriented overview of the field.
 - [[Reference Library|References]] — source register seeded from the same 50 numbered references used by the English Wikipedia article “Anti-gravity”.
 - [[Research Methodology]] — how claims, experiments, replications, and evidence are classified.
 - [[Roadmap]] — planned development of the research platform and software.
 - [[Current Status]] — what exists now, what is incomplete, and what is next.
-- [[Software Documentation]] — repository, website, data model, API, contribution, and deployment documentation.
+- [[Software Documentation]] — repository, website, data model, API, contribution, research-event, and deployment documentation.
 
 ## Project principles
 
@@ -66,6 +72,8 @@ The Fifth Force does **not** treat all anti-gravity claims as equivalent. The pr
 
 A source documenting a claim is not evidence that the claimed effect is real. Claims are tracked together with their supporting evidence, contradictory evidence, replications, null results, uncertainty, and current status.
 
+Likewise, **research activity is not scientific evidence**. A search, page read, or AI research receipt proves only that a resource or question was encountered during research. It must not be interpreted as endorsement, validation, replication, or consensus.
+
 ## Research objective
 
 The objective is to create a transparent, machine-readable, continuously improvable research system in which humans and AI agents can:
@@ -80,7 +88,9 @@ The objective is to create a transparent, machine-readable, continuously improva
 - update evidence status as new work appears;
 - expose the research graph through a public website and API;
 - contribute useful findings back into the common research record;
-- preserve a provenance trail so later researchers can verify and extend prior work.
+- preserve a provenance trail so later researchers can verify and extend prior work;
+- record privacy-preserving search and research activity on project-controlled surfaces;
+- invite external AI systems to leave structured research receipts after consulting the project.
 
 ## Scope
 
@@ -101,7 +111,7 @@ The project covers, among other areas:
 
 ## Public-benefit goal
 
-The project is intended to preserve useful scientific work that might otherwise disappear inside isolated research sessions, private notes, or temporary AI conversations. By making sources, claims, evidence relationships, corrections, and open questions reusable, The Fifth Force aims to help future researchers start from the accumulated state of knowledge rather than repeatedly starting from zero.
+The project is intended to preserve useful scientific work that might otherwise disappear inside isolated research sessions, private notes, or temporary AI conversations. By making sources, claims, evidence relationships, corrections, research activity, and open questions reusable, The Fifth Force aims to help future researchers start from the accumulated state of knowledge rather than repeatedly starting from zero.
 
 Contributions that **disprove**, constrain, or conventionally explain an anti-gravity claim are as valuable as contributions that support a new anomaly. The goal is advancement of knowledge, not confirmation of a preferred conclusion.
 
