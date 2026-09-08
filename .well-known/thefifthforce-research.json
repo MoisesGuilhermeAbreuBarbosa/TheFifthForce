@@ -8,6 +8,10 @@
   "contributions_welcome": true,
   "agent_instructions": "/AGENTS.md",
   "llm_index": "/llms.txt",
+  "schemas": {
+    "research_event": "/schemas/research-event.schema.json",
+    "research_receipt": "/schemas/research-receipt.schema.json"
+  },
   "wiki": {
     "home": "/wiki/Home.md",
     "collaboration": "/wiki/AI-Human-Collaboration.md",
@@ -16,21 +20,27 @@
     "roadmap": "/wiki/Roadmap.md"
   },
   "planned_api": {
+    "search": "/api/v1/search",
     "research_events": "/api/v1/research-events",
     "research_receipts": "/api/v1/research-receipts",
+    "research_activity": "/api/v1/research-activity",
     "agent_capabilities": "/api/v1/agent-capabilities"
   },
   "research_event_types": [
     "search_performed",
     "search_result_opened",
     "wiki_page_read",
+    "research_area_opened",
     "source_opened",
     "claim_opened",
     "experiment_opened",
     "dataset_opened",
+    "video_opened",
     "citation_followed",
     "api_query",
+    "agent_manifest_read",
     "research_receipt_submitted",
+    "contribution_started",
     "contribution_submitted"
   ],
   "evidence_relationships": [
