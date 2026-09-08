@@ -13,8 +13,11 @@
 
 **Research**
 - [[Anti-Gravity]]
-- [[QAGRA — Quantum-Assisted Gravitational Research Architecture|QAGRA]]
 - [[References|Reference Library]]
+
+**Quantum advances**
+- [[Quantum Advances|Quantum-Advances]]
+- [[QAGRA — Quantum-Assisted Gravitational Research Architecture|QAGRA]]
 
 **Core investigation tracks**
 - Antimatter gravity
@@ -25,6 +28,8 @@
 - Rotating-mass claims
 - Anomalous propulsion
 - Quantum-assisted gravity research
+- Quantum sensing & metrology
+- Quantum computing & AI
 - Historical programs
 - Replication & metrology
 
