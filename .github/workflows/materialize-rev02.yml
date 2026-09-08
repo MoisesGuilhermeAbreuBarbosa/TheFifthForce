@@ -1,0 +1,33 @@
+name: Materialize Rev02 migration
+
+on:
+  push:
+    branches: [rev02-migration]
+    paths:
+      - 'rev02-source.tgz.b64'
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: rev02-migration
+          fetch-depth: 0
+      - name: Expand Rev02 source
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f rev02-source.tgz.b64
+          base64 -d rev02-source.tgz.b64 > /tmp/rev02-source.tgz
+          tar -xzf /tmp/rev02-source.tgz -C .
+          rm -f rev02-source.tgz.b64
+          rm -f .github/workflows/materialize-rev02.yml
+          git config user.name "open-field-migration-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Complete OPEN FIELD Rev02 migration"
+          git push origin HEAD:rev02-migration
