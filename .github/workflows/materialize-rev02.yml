@@ -4,7 +4,7 @@ on:
   push:
     branches: [rev02-migration]
     paths:
-      - 'rev02-source.tgz.b64'
+      - 'rev02.part.*'
 
 permissions:
   contents: write
@@ -17,14 +17,20 @@ jobs:
         with:
           ref: rev02-migration
           fetch-depth: 0
-      - name: Expand Rev02 source
+      - name: Expand Rev02 source when all chunks exist
         shell: bash
         run: |
           set -euo pipefail
-          test -f rev02-source.tgz.b64
-          base64 -d rev02-source.tgz.b64 > /tmp/rev02-source.tgz
+          expected=(rev02.part.00 rev02.part.01 rev02.part.02 rev02.part.03 rev02.part.04 rev02.part.05 rev02.part.06 rev02.part.07 rev02.part.08)
+          for f in "${expected[@]}"; do
+            if [ ! -f "$f" ]; then
+              echo "Waiting for $f"
+              exit 0
+            fi
+          done
+          cat "${expected[@]}" | base64 -d > /tmp/rev02-source.tgz
           tar -xzf /tmp/rev02-source.tgz -C .
-          rm -f rev02-source.tgz.b64
+          rm -f rev02.part.* rev02-source.tgz.b64
           rm -f .github/workflows/materialize-rev02.yml
           git config user.name "open-field-migration-bot"
           git config user.email "actions@users.noreply.github.com"
