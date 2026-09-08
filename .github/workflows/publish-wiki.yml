@@ -45,17 +45,16 @@ jobs:
           rm -rf "$TARGET"
 
           echo "Attempting to clone native Wiki repository..."
-          if git clone "$WIKI_URL" "$TARGET"; then
-            echo "Native Wiki repository cloned."
-          else
-            echo "Wiki repository has not been initialized yet; attempting first-push initialization."
-            mkdir -p "$TARGET"
-            git -C "$TARGET" init
-            git -C "$TARGET" remote add origin "$WIKI_URL"
+          if ! git clone "$WIKI_URL" "$TARGET"; then
+            echo "Native Wiki backing repository is not initialized yet."
+            echo "Create the first page once in the GitHub Wiki UI. The resulting gollum event will automatically rerun this workflow and publish the complete Wiki."
+            exit 0
           fi
 
+          echo "Native Wiki repository cloned."
+
           # GitHub Wiki pages are flat. Mirror Markdown source while excluding the
-          # repository-only README used during early development.
+          # obsolete repository-only README used during early development.
           find "$TARGET" -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
           cp -a wiki/. "$TARGET"/
           rm -f "$TARGET/README.md"
@@ -69,8 +68,6 @@ jobs:
           fi
 
           git commit -m "Publish The Fifth Force Wiki from ${GITHUB_SHA}"
-
-          # GitHub's Wiki Git repository conventionally uses master.
           git branch -M master
           git push origin master
 
