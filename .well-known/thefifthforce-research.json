@@ -1,0 +1,46 @@
+{
+  "project": "The Fifth Force",
+  "repository": "MoisesGuilhermeAbreuBarbosa/TheFifthForce",
+  "purpose": "Open human-AI research commons for anti-gravity, gravity modification, anomalous propulsion, and adjacent physics.",
+  "human_ai_collaboration": true,
+  "research_receipts_supported": "planned",
+  "search_events_recorded": "planned_on_project_controlled_surfaces",
+  "contributions_welcome": true,
+  "agent_instructions": "/AGENTS.md",
+  "llm_index": "/llms.txt",
+  "wiki": {
+    "home": "/wiki/Home.md",
+    "collaboration": "/wiki/AI-Human-Collaboration.md",
+    "research_presence_protocol": "/wiki/Research-Presence-Protocol.md",
+    "methodology": "/wiki/Research-Methodology.md",
+    "roadmap": "/wiki/Roadmap.md"
+  },
+  "planned_api": {
+    "research_events": "/api/v1/research-events",
+    "research_receipts": "/api/v1/research-receipts",
+    "agent_capabilities": "/api/v1/agent-capabilities"
+  },
+  "research_event_types": [
+    "search_performed",
+    "search_result_opened",
+    "wiki_page_read",
+    "source_opened",
+    "claim_opened",
+    "experiment_opened",
+    "dataset_opened",
+    "citation_followed",
+    "api_query",
+    "research_receipt_submitted",
+    "contribution_submitted"
+  ],
+  "evidence_relationships": [
+    "supports",
+    "contradicts",
+    "constrains",
+    "replicates",
+    "fails_to_replicate",
+    "contextualizes",
+    "unresolved"
+  ],
+  "interpretation": "A research imprint records consultation or research activity only. It is not endorsement, validation, replication, or evidence that a scientific claim is true."
+}
