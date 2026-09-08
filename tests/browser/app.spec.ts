@@ -33,3 +33,15 @@ test('Compact Home navigation and web Wiki',async({page})=>{
  await page.getByRole('navigation',{name:'Wiki pages'}).getByRole('link',{name:'Roadmap',exact:true}).click();await expect(page).toHaveURL(/page=Roadmap/);await expect(page.locator('.wiki-article h1')).toContainText('Roadmap');
  await page.getByRole('link',{name:'Home',exact:true}).first().click();await expect(page.locator('.intro')).toBeVisible();
 });
+test('Quantum Advances runs simulation, circuit, benchmark and evidence ledger',async({page})=>{
+ const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('/quantum-advances');
+ await expect(page.getByRole('heading',{name:/Quantum advances/})).toBeVisible();
+ await expect(page.getByRole('link',{name:'Quantum Advances',exact:true})).toHaveAttribute('aria-current','page');
+ await page.getByRole('button',{name:'Run simulation',exact:true}).click();await expect(page.getByText(/Verified append/)).toBeVisible();
+ await page.getByRole('button',{name:'Execute state-vector circuit',exact:true}).click();await expect(page.getByText('OpenQASM 3',{exact:true})).toBeVisible();await expect(page.getByText(/state-vector/).first()).toBeVisible();
+ await page.getByRole('button',{name:'Run benchmark',exact:true}).click();await expect(page.getByText('Classical accuracy',{exact:true})).toBeVisible();await expect(page.getByText('Quantum-feature accuracy',{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Generate hypothesis',exact:true}).click();await expect(page.getByText(/Structured fallback|Vercel AI Gateway/)).toBeVisible();await expect(page.locator('article').filter({hasText:/Predictions/}).first()).toBeVisible();
+ await page.getByRole('button',{name:'Verify chain',exact:true}).click();await expect(page.getByText(/SHA-256 chain verified/)).toBeVisible();
+ expect(errors).toEqual([]);
+});
