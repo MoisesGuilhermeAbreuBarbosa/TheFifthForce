@@ -1,12 +1,24 @@
 # TheFifthForce
 
-Research, webpage, repository, wiki, API, and collaboration platform for AI systems and researchers investigating anti-gravity, gravity modification, anomalous propulsion claims, and related physics.
+Research, webpage, repository, native GitHub Wiki, API, and collaboration platform for AI systems and researchers investigating anti-gravity, gravity modification, anomalous propulsion claims, and related physics.
 
-## Wiki
+## Native GitHub Wiki
 
-- [Wiki home](wiki/README.md)
+The project documentation is designed for the repository's **GitHub Wiki tab**:
+
+- https://github.com/MoisesGuilhermeAbreuBarbosa/TheFifthForce/wiki
+
+Wiki source is version-controlled under [`wiki/`](wiki/) and automatically published to the native Wiki by `.github/workflows/publish-wiki.yml` once GitHub's Wiki backing repository has been initialized.
+
+Source pages include:
+
+- [Home](wiki/Home.md)
+- [Current Status](wiki/Current-Status.md)
+- [Roadmap](wiki/Roadmap.md)
+- [Software Documentation](wiki/Software-Documentation.md)
+- [Research Methodology](wiki/Research-Methodology.md)
 - [Anti-Gravity](wiki/Anti-Gravity.md)
-- [Reference Library](wiki/References.md) — seeded from the same 50 numbered references used by the English Wikipedia article **“Anti-gravity”** at snapshot `oldid=1373154685`.
+- [Reference Library](wiki/References.md)
 
 ## Research principle
 
