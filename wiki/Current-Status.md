@@ -19,11 +19,52 @@ Completed source pages:
 - Roadmap
 - Software Documentation
 - Research Methodology
+- AI–Human Collaboration
+- Research Presence Protocol
 - Anti-Gravity overview
 - Reference Library
 - Wiki sidebar navigation
 
 The initial Anti-Gravity bibliography is seeded from the same 50 numbered references used by the English Wikipedia article “Anti-gravity”, with additional evidence classification.
+
+## AI–human research collaboration
+
+**Status: mission and protocol defined; application implementation pending**
+
+Completed in the repository:
+
+- explicit AI–human collaborative research mission;
+- machine-readable research invitation in the Wiki;
+- `AGENTS.md` agent instructions;
+- `llms.txt` discovery document;
+- `.well-known/thefifthforce-research.json` capability manifest;
+- structured Research Receipt schema;
+- evidence/provenance rules for AI contributions.
+
+The target is for humans, AI models, and autonomous agents to leave reusable research trails instead of allowing useful discoveries to disappear inside isolated sessions.
+
+## Research presence / search imprints
+
+**Status: protocol and data model defined; runtime instrumentation not yet implemented**
+
+The target behavior is that every supported interaction on project-controlled surfaces creates a minimal `ResearchEvent`, including:
+
+- search performed;
+- search result opened;
+- Wiki/research page read;
+- source opened;
+- claim opened;
+- experiment or dataset opened;
+- citation followed;
+- API query;
+- research receipt submitted;
+- contribution submitted.
+
+The application should automatically create a `search_performed` event when a search executes and return a `research_event_id` with the search results.
+
+External AI systems that only encounter a public GitHub page cannot be technically forced to transmit data back. They are instead given an explicit standardized invitation to submit a Research Receipt when technically possible.
+
+Research presence is **not scientific evidence**. It records that a question or resource was encountered during research, not that it was endorsed, validated, or reproduced.
 
 ## Research content
 
@@ -126,39 +167,51 @@ The newsroom should function as a continuously refreshed research feed connected
 
 ## For Agents
 
-**Status: restoration and expansion required**
+**Status: repository-level discovery defined; production API pending**
 
-The agent interface should document:
+The agent interface now documents:
 
-- machine-readable schemas;
-- API endpoints;
+- machine-readable research invitation;
 - source provenance requirements;
 - evidence classifications;
 - contribution rules;
 - citation standards;
-- validation procedures.
+- Research Receipt format;
+- Research Presence Protocol.
+
+Still required:
+
+- production `/api/v1/agent-capabilities` endpoint;
+- production `/api/v1/research-receipts` endpoint;
+- production `/api/v1/research-events` endpoint;
+- automatic search/read event capture;
+- receipt validation and moderation;
+- agent attribution and privacy controls.
 
 ## Public API
 
-**Status: not yet documented/implemented in this repository**
+**Status: specified in Wiki; not yet implemented in this repository**
 
-The API should ultimately expose canonical records for sources, claims, experiments, research areas, people, institutions, open questions, videos, datasets, and evidence relationships.
+The API should ultimately expose canonical records for sources, claims, experiments, research areas, people, institutions, open questions, videos, datasets, evidence relationships, research events, and research receipts.
 
 ## Software codebase
 
 **Status: repository foundation only**
 
-The GitHub repository currently contains the project foundation and Wiki-source documentation. The complete production website/application code and research database still need to be consolidated into this repository and documented here.
+The GitHub repository currently contains the project foundation, machine-readable agent-discovery files, and Wiki-source documentation. The complete production website/application code and research database still need to be consolidated into this repository and documented here.
 
 ## Immediate priorities
 
-1. Publish and maintain the native GitHub Wiki.
+1. Initialize and publish the native GitHub Wiki.
 2. Expand the literature register beyond the initial 50-source seed set.
-3. Define the canonical database schema.
+3. Define and implement the canonical database schema, including `ResearchEvent`, `ResearchReceipt`, and `ResearchSession`.
 4. Consolidate the production website code into this repository.
-5. Restore interactive research-area, open-question, repository, and agent functionality.
-6. Rebuild the newsroom and dedicated video library.
-7. Implement the evidence graph and API.
-8. Establish contribution, moderation, and provenance workflows.
+5. Instrument application search so every project-controlled search creates a privacy-preserving research imprint.
+6. Implement source/page/citation event chaining and the research-activity graph.
+7. Implement AI Research Receipt and agent-capabilities endpoints.
+8. Restore interactive research-area, open-question, repository, and agent functionality.
+9. Rebuild the newsroom and dedicated video library.
+10. Implement the evidence graph and public API.
+11. Establish contribution, moderation, privacy, and provenance workflows.
 
 See [[Roadmap]] for the staged implementation plan.
