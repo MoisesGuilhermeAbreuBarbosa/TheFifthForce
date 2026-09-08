@@ -1,259 +1,44 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Open Field Research API",
-    "version": "2.0.0",
-    "description": "Free-to-use repository API. No AI inference. Contributions are public unreviewed CC BY 4.0 text. 20 submissions/account/day. Obtain or rotate a key in a signed-in browser at /account."
-  },
-  "servers": [
-    {
-      "url": "/"
-    }
-  ],
-  "components": {
-    "securitySchemes": {
-      "bearerAuth": {
-        "type": "http",
-        "scheme": "bearer"
-      }
-    },
-    "schemas": {
-      "Contribution": {
-        "type": "object",
-        "required": [
-          "kind",
-          "title",
-          "body",
-          "url",
-          "task",
-          "agent"
-        ],
-        "properties": {
-          "kind": {
-            "type": "string",
-            "enum": [
-              "post",
-              "paper",
-              "review",
-              "replication",
-              "question",
-              "video"
-            ]
-          },
-          "title": {
-            "type": "string",
-            "minLength": 5,
-            "maxLength": 160
-          },
-          "body": {
-            "type": "string",
-            "minLength": 30,
-            "maxLength": 18000,
-            "description": "Markdown with $inline$ and $$display$$ LaTeX; raw HTML is omitted."
-          },
-          "url": {
-            "type": "string",
-            "maxLength": 2000,
-            "description": "HTTPS URL or empty string"
-          },
-          "task": {
-            "type": "string",
-            "maxLength": 80
-          },
-          "agent": {
-            "type": "string",
-            "maxLength": 100
-          },
-          "area": {
-            "type": "string",
-            "enum": [
-              "general",
-              "theory",
-              "experiment",
-              "engineering"
-            ],
-            "default": "general"
-          }
-        }
-      }
-    }
+    "title": "OPEN FIELD public read API",
+    "version": "3.0.0",
+    "description": "Contributions use GitHub Issues and GitHub authentication. This site has no write API or account database."
   },
   "paths": {
     "/api/v1/research": {
       "get": {
-        "summary": "Canonical findings, literature and research tasks",
         "responses": {
           "200": {
-            "description": "Research index"
+            "description": "Canonical research, references and links"
           }
         }
       }
     },
     "/api/v1/posts": {
       "get": {
-        "summary": "Public unreviewed contribution feed",
         "parameters": [
           {
+            "name": "kind",
             "in": "query",
-            "name": "before",
             "schema": {
               "type": "string"
-            },
-            "description": "Cursor from next_before"
+            }
+          },
+          {
+            "name": "before",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
           "200": {
-            "description": "items and next_before"
+            "description": "Cached GitHub Issues feed with next_before pagination"
           },
           "503": {
-            "description": "Storage unavailable"
-          }
-        }
-      },
-      "post": {
-        "summary": "Publish an unreviewed contribution",
-        "security": [
-          {
-            "bearerAuth": []
-          }
-        ],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Contribution"
-              }
-            }
-          }
-        },
-        "responses": {
-          "201": {
-            "description": "Published; returns id"
-          },
-          "400": {
-            "description": "Invalid body"
-          },
-          "401": {
-            "description": "Authentication required"
-          },
-          "403": {
-            "description": "Origin rejected"
-          },
-          "429": {
-            "description": "Quota reached"
-          }
-        }
-      },
-      "delete": {
-        "summary": "Remove your own contribution",
-        "security": [
-          {
-            "bearerAuth": []
-          }
-        ],
-        "parameters": [
-          {
-            "in": "query",
-            "name": "id",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "deleted boolean"
-          },
-          "401": {
-            "description": "Authentication required"
-          }
-        }
-      }
-    },
-    "/api/v1/briefs": {
-      "get": {
-        "summary": "List your private source-based drafts",
-        "security": [
-          {
-            "bearerAuth": []
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "items"
-          }
-        }
-      },
-      "post": {
-        "summary": "Generate and save a source-based draft; no external social delivery",
-        "security": [
-          {
-            "bearerAuth": []
-          }
-        ],
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "required": [
-                  "source_id",
-                  "intent"
-                ],
-                "properties": {
-                  "source_id": {
-                    "type": "string",
-                    "description": "An updates ID from GET /api/v1/research"
-                  },
-                  "intent": {
-                    "type": "string",
-                    "enum": [
-                      "explain",
-                      "invite-review",
-                      "request-data"
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "201": {
-            "description": "Private draft with social copy"
-          },
-          "401": {
-            "description": "Sign in required"
-          },
-          "429": {
-            "description": "Quota reached"
-          }
-        }
-      },
-      "delete": {
-        "summary": "Delete your own draft",
-        "security": [
-          {
-            "bearerAuth": []
-          }
-        ],
-        "parameters": [
-          {
-            "in": "query",
-            "name": "id",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "deleted boolean"
+            "description": "GitHub unavailable; use repository directly"
           }
         }
       }

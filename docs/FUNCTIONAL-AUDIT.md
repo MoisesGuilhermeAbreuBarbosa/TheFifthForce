@@ -1,3 +1,9 @@
+## Current storage update: GitHub
+
+This update supersedes database/account deployment requirements in the historical restoration audit below. Public contributions and reply threads use GitHub Issues; canonical research remains in repository files. No Turso secrets are required. The account page links to GitHub; former site API keys and recovery keys are retired. The community feed is cached and has a direct GitHub fallback. Newsroom drafts are browser-local and exportable. Publication requires finishing the submission on GitHub. No previous hosted database content has been imported.
+
+## Historical restoration audit
+
 # Original app → portable GitHub app audit
 
 Baseline: the original open-field-notes source checkout, compared with Rev02 static recovery and the GitHub default branch on 2026-09-08. Live original-page retrieval failed; this is a source audit, not a claim of authenticated live-site inspection. Existing hosted database contents were not exported.

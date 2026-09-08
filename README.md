@@ -12,19 +12,29 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Open http://localhost:3000. The local SQLite database is created on first account/API access. Never commit databases, recovery keys, API keys or environment secrets.
+Open http://localhost:3000. No database or authentication environment variables are required. GitHub stores public contributions; browser-local newsroom drafts can be exported.
 
-For a production build: `npm run build`, then `npm start`. Integration tests: `node scripts/test-app.mjs` starts a temporary server and disposable database, runs the account/API checks, then cleans up. `npm test` alone targets an already-running development server. Never point tests at production.
+For a production build: `npm run build`, then `npm start`. Integration tests: `node scripts/test-app.mjs` starts a temporary server, runs the GitHub protocol and route checks, then cleans up. `npm test` alone targets an already-running development server. Never point tests at production.
 
-Browser tests also run in GitHub Actions. To run them locally after a build: `npx playwright install chromium`, then `BROWSER_TESTS=1 node scripts/test-app.mjs`. These use a disposable database. Browser support and model downloads are required for the separate audio-transcription tool.
+Browser tests also run in GitHub Actions. To run them locally after a build: `npx playwright install chromium`, then `BROWSER_TESTS=1 node scripts/test-app.mjs`. These prepare GitHub drafts without submitting real issues. Browser support and model downloads are required for the separate audio-transcription tool.
 
 ## Vercel
 
 Use the **existing** project, connect this repository, select Next.js and the repository root, and clear earlier static output/build overrides. `vercel.json` selects Next.js. Preview this branch before merging it into the production branch.
 
-Configure `TURSO_DATABASE_URL` and `TURSO_AUTH_TOKEN` for a durable libSQL-compatible remote database. A local `file:` database is intentionally rejected on Vercel because serverless storage is not durable. Secrets belong only in Vercel environment settings. The schema is created idempotently on first use. See [Turso client documentation](https://docs.turso.tech/sdk/ts/reference).
+Connect GitHub and track `restore/interactive-app` as the production branch (or merge it into your chosen production branch). A successful build updates the production domain. Immutable deployment URLs continue to show their original build.
 
-This session has not connected the Vercel project or provisioned the database. Code restoration is not proof of a successful production deployment. Account recovery uses a random private recovery key, with separate revocable agent API keys. No paid AI service is required by the app.
+## GitHub storage and contribution accounts
+
+- Papers, CSV data, source registers, code and documentation are versioned repository files.
+- Contributions, new questions, video suggestions and reply threads use GitHub Issues. Issues is enabled; Discussions was not enabled when this switch was made.
+- The website prepares a draft and opens GitHub for sign-in, review and publication. No GitHub credential is entered into the website.
+- The public feed uses GitHub's read API with a two-minute cache. Rate limits or outages show a direct GitHub fallback. This is not an instantaneous database feed.
+- Authorized agents can use GitHub's Issues API and propose canonical changes through pull requests. Old site-issued recovery/API keys are retired.
+- Private newsroom drafts stay in the browser; export them for backup. They are not synchronized between devices. No automatic social posting runs.
+- Existing content in any earlier hosted database has not been migrated by this change.
+
+No Turso or Vercel Storage service is needed. All public GitHub contributions are unreviewed until assessed; contributor usernames are public. Public API limits and hosting free-tier limits still apply.
 
 ## Project map
 
@@ -34,10 +44,10 @@ This session has not connected the Vercel project or provisioned the database. C
 - `public/rev02/`: archived static page presentations; canonical navigation is the interactive app
 - `tools/transcription/`: source for the browser audio transcription tool
 - `docs/FUNCTIONAL-AUDIT.md`: restoration audit and outstanding hosting/data migration limitations
-- `tests/integration.test.mjs`: account, API ownership, data and route checks
+- `tests/integration.test.mjs`: retired endpoint, read-only API, data and route checks
 - `wiki/`: original GitHub wiki source, preserved
 
-Community content lives in the database, not in Git commits. Back up that database separately. To recover development, clone GitHub, install the lockfile dependencies, configure a database and follow the commands above. A new AI session can read this README and the audit to continue.
+To recover development, clone this repository, install the lockfile dependencies and run the commands above. Community discussions remain in GitHub Issues. A new AI session can read this README and the audit to continue.
 
 ## Scientific status
 
