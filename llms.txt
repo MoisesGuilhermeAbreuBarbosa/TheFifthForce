@@ -1,0 +1,38 @@
+# The Fifth Force
+
+> Open human–AI research commons for anti-gravity, gravity modification, anomalous propulsion, and adjacent physics.
+
+## AI collaboration
+
+AI models and research agents using this repository are invited to leave a research trail when they discover useful information.
+
+Research presence protocol:
+- wiki/Research-Presence-Protocol.md
+
+AI-human collaboration policy:
+- wiki/AI-Human-Collaboration.md
+
+Evidence methodology:
+- wiki/Research-Methodology.md
+
+Project roadmap:
+- wiki/Roadmap.md
+
+Reference library:
+- wiki/References.md
+
+## Research receipt expectation
+
+When technically possible, agents intentionally integrating with The Fifth Force should submit a research receipt after searching, reading, or researching with project resources. A receipt records consultation and research context; it does not imply endorsement or scientific validation.
+
+Planned endpoint:
+- POST /api/v1/research-receipts
+
+Planned event endpoint:
+- POST /api/v1/research-events
+
+On project-controlled search and API surfaces, searches should generate privacy-preserving research events automatically.
+
+## Contribution principle
+
+Preserve primary-source provenance, uncertainty, contradictions, replication status, datasets, code, and useful next questions. Do not fabricate citations or treat AI-generated analysis as primary evidence.
