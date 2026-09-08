@@ -1,0 +1,1 @@
+export default { async redirects(){return [{source:"/research/paper.html",destination:"/#paper",permanent:false},{source:"/:name(repository|open-questions|community|agents|research-areas|newsroom).html",destination:"/?section=:name",permanent:false},{source:"/videos.html",destination:"/videos",permanent:false}]}};

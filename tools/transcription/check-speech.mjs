@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import {pipeline,env} from '@huggingface/transformers';
+const input=process.argv[2];if(!input)throw Error('Provide a mono 16 kHz little-endian float32 audio fixture.');
+env.cacheDir=process.env.OPEN_FIELD_MODEL_CACHE||'.cache/whisper';env.allowLocalModels=false;
+const bytes=fs.readFileSync(input);const pcm=new Float32Array(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength));
+const asr=await pipeline('automatic-speech-recognition','Xenova/whisper-tiny.en',{device:'cpu',dtype:'q8'});
+const result=await asr(pcm,{return_timestamps:true});
+if(!result.text.toLowerCase().includes('gravity')||!result.chunks?.length)throw Error('Synthetic speech check failed');
+console.log(JSON.stringify({fixture:'Synthetic speech; not one of the requested videos',result},null,2));
+await asr.dispose();

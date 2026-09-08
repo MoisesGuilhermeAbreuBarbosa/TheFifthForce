@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Audio transcription · Open Field</title><style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#091518;color:#e2ecec;font:17px/1.7 system-ui,sans-serif}main{max-width:950px;margin:auto;padding:32px 24px}h1{font-size:36px;line-height:1.2}a{color:#8de0d0}label{display:block;margin:24px 0 8px}input,textarea,button{font:inherit}input:not([type=checkbox]),textarea{width:100%;padding:12px;border:1px solid #486462;border-radius:6px;background:#142529;color:inherit}textarea{min-height:300px}button{padding:11px 18px;margin:12px 8px 12px 0;background:#8de0d0;color:#102623;border:0;border-radius:6px;cursor:pointer}button:disabled{opacity:.5;cursor:default}.note{background:#152a2d;padding:18px;border-left:2px solid #8de0d0}#status{min-height:2em}#segments{white-space:pre-wrap}small{font-size:14px}</style></head><body><main>
+<a href="/#network">← Research repository</a><h1>Audio → timestamped research text</h1>
+<p>Transcribe an English audio file on your device using a free Whisper model. Import existing SRT or VTT captions when available.</p>
+<p class="note">Your selected audio stays in this browser. Model files download from Hugging Face on first use; that provider receives normal download requests. No paid API or automatic publication is used. The small model can mishear names, equations and numbers: verify against the recording.</p>
+<label for="source">Source video or recording URL</label><input id="source" type="url" placeholder="https://www.youtube.com/watch?v=…">
+<label for="file">Audio file or captions</label><input id="file" type="file" accept="audio/*,.mp4,.webm,.srt,.vtt">
+<small>Audio: up to 100 MB and 20 minutes per clip. Split longer recordings. Browser codec support varies. A YouTube URL alone is not an audio file.</small>
+<label for="offset">Clip start in the original recording (seconds)</label><input id="offset" type="number" min="0" value="0">
+<label><input id="rights" type="checkbox"> I have permission to process this file.</label>
+<button id="run">Transcribe / import captions</button><button id="stop" disabled>Cancel</button>
+<p id="status" role="status" aria-live="polite">Select a file to begin.</p>
+<label for="text">Editable transcript draft</label><textarea id="text" placeholder="Your transcript appears here. Check it against the audio before citing it."></textarea>
+<button id="json" disabled>Export timestamped JSON</button><button id="txt" disabled>Export edited text</button><button id="srt" disabled>Export original SRT</button>
+<p><small>Text edits are exported separately from the original timestamped segments. All output remains marked unreviewed. Exporting is not permission to republish a third-party transcript.</small></p>
+<details><summary>Original segment timestamps</summary><div id="segments"></div></details>
+</main><script type="module" src="/tools/transcribe-ui.js"></script></body></html>

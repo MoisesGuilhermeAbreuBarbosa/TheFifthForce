@@ -1,0 +1,38 @@
+[
+  {
+    "video_id": "bY1EQ6HD-ao",
+    "url": "https://www.youtube.com/watch?v=bY1EQ6HD-ao",
+    "status": "unavailable",
+    "transcript_verified": false,
+    "title": "What Bothers Physicists About Black Holes (Interview with Brian Cox)",
+    "creator": "Cleo Abram",
+    "reason": "Caption endpoint returned no text"
+  },
+  {
+    "video_id": "ybxSgIBbBh8",
+    "url": "https://www.youtube.com/watch?v=ybxSgIBbBh8",
+    "status": "unavailable",
+    "transcript_verified": false,
+    "title": "The Mysterious Force of Gravity Explained by Neil deGrasse Tyson",
+    "creator": "Science Time",
+    "reason": "Caption endpoint returned no text"
+  },
+  {
+    "video_id": "XKRMbVpJ3Rc",
+    "url": "https://www.youtube.com/watch?v=XKRMbVpJ3Rc",
+    "status": "unavailable",
+    "transcript_verified": false,
+    "title": "Scientists Have Figured Out How to Make Antigravity",
+    "creator": "Sabine Hossenfelder",
+    "reason": "Caption endpoint returned no text"
+  },
+  {
+    "video_id": "JMWEQwIt_ew",
+    "url": "https://www.youtube.com/watch?v=JMWEQwIt_ew",
+    "status": "unavailable",
+    "transcript_verified": false,
+    "title": "Project Greenglow: Is Gravity Control Actually Possible?",
+    "creator": "Spark",
+    "reason": "Caption endpoint returned no text"
+  }
+]
