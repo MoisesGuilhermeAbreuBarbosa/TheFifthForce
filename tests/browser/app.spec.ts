@@ -52,5 +52,5 @@ test('Separate repository, rich archive reader and incoming references',async({p
  await page.getByRole('link',{name:/Initial physics investigation/}).click();await expect(page).toHaveURL(/documents\/early-working-paper/);await expect(page.locator('.document-html svg').first()).toBeVisible();
  const download=page.waitForEvent('download');await page.getByRole('link',{name:'Download original source',exact:true}).click();expect((await download).suggestedFilename()).toBe('early-working-paper.txt');
  await page.goto('/research/early-working-paper.txt');await expect(page).toHaveURL(/documents\/early-working-paper/);
- await page.goto('/literature');await expect(page.getByRole('heading',{name:'Quantum-processor research contribution'})).toBeVisible();await page.getByRole('link',{name:'Add a reference',exact:true}).click();await expect(page.getByLabel('Type',{exact:true})).toHaveValue('reference');
+ await page.goto('/literature');await expect(page.getByRole('heading',{name:'Quantum-processor research contribution'})).toBeVisible();await page.getByRole('link',{name:'Add a reference',exact:true}).click();await expect(page.getByLabel('Contribution type',{exact:true})).toHaveValue('reference');
 });
