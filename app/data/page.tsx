@@ -1,2 +1,3 @@
 import {DataViewer} from './viewer';
-export default function Page(){return <DataViewer/>;}
+import {SiteNavigation} from '../site-navigation';
+export default function Page(){return <main><SiteNavigation current="repository"/><DataViewer/></main>;}

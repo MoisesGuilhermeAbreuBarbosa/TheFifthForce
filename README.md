@@ -58,3 +58,9 @@ No reproducible result here establishes gravity shielding or control. Candidate 
 `/wiki` reads the native GitHub Wiki with a 120-second server cache and renders internal wiki links within the site. A versioned snapshot in `public/wiki/` provides an explicitly labeled fallback during upstream failures. New pages linked from the native sidebar appear in navigation. Editing links sit at the bottom of each page. The existing main-branch wiki publisher can overwrite native edits from `wiki/`; keep the source files aligned.
 
 Code/research file commits on `restore/interactive-app` trigger Vercel production builds. GitHub Issues are read at runtime, and the visible community feed refreshes every two minutes and on returning to the tab. No scheduled deployment is needed for contributions. Native Wiki updates are fetched on subsequent page requests; an already open Wiki page needs a reload.
+
+## Interface completion
+
+Home is a dedicated landing view. Shared navigation includes consistent icons, a subtle Home link, Literature, and Quantum Advances. `/repository` and `/literature` are separate pages. Literature combines the curated file with a separately labeled incoming GitHub paper/reference feed and a reference-submission form. Publishing still finishes on GitHub; submissions do not become curated evidence automatically.
+
+`/documents/[slug]` presents typeset archived papers, Markdown equations, numerical data charts or readable source code as appropriate. Original downloads use `/api/documents/[slug]/raw`; legacy early-paper text links redirect to the rich readers. Original assets remain in GitHub.

@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "OPEN FIELD public read API",
-    "version": "3.0.0",
+    "version": "3.1.0",
     "description": "Contributions use GitHub Issues and GitHub authentication. This site has no write API or account database."
   },
   "paths": {
@@ -23,7 +23,8 @@
             "in": "query",
             "schema": {
               "type": "string"
-            }
+            },
+            "description": "Optional kind or comma-separated kinds, including reference and paper."
           },
           {
             "name": "before",

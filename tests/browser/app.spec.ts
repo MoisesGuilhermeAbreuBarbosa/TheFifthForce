@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 test('Original navigation, literature, formulas and embedded data',async({page})=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('/');await page.getByRole('tab',{name:'Repository',exact:true}).click();await expect(page.getByRole('heading',{name:'Literature register'})).toBeVisible();
+ await page.goto('/');await page.getByRole('navigation',{name:'Research navigation'}).getByRole('link',{name:'Literature',exact:true}).click();await expect(page.getByRole('heading',{name:'Literature register'})).toBeVisible();
  await page.getByRole('button',{name:'Next sources'}).click();await expect(page.getByText('Page 2 / 7',{exact:true})).toBeVisible();
  await page.getByRole('textbox',{name:'Search literature'}).fill('Alcubierre');await expect(page.getByRole('link',{name:/Alcubierre warp metric/})).toBeVisible();
  await page.goto('/#paper');await expect(page.locator('.katex-display').first()).toBeVisible();await expect(page.locator('.recharts-wrapper')).toBeVisible();await expect(page.getByRole('button',{name:'Read aloud',exact:true})).toBeVisible();
@@ -24,9 +24,9 @@ test('Compact Home navigation and web Wiki',async({page})=>{
  await page.goto('/');await expect(page.getByRole('heading',{name:'Gravity? Anti-gravity evidence?'})).toBeVisible();
  await expect(page.locator('.collaboration-note')).not.toHaveAttribute('open','');
  await expect(page.locator('header img')).toHaveAttribute('src','/open-field-mark.svg');
- const menu=page.getByRole('tablist');expect(await menu.locator('a').first().textContent()).toBe('Videos & submissions');
+ const menu=page.getByRole('navigation',{name:'Research navigation'});await expect(menu.getByRole('link',{name:'Videos & submissions'}).locator('svg')).toBeVisible();await expect(menu.getByRole('link',{name:'Wiki',exact:true}).locator('svg')).toBeVisible();
  expect(await menu.evaluate(e=>e.getBoundingClientRect().top)).toBeLessThan(480);
- await page.getByRole('tab',{name:'Repository',exact:true}).click();await expect(page.locator('.intro')).toHaveCount(0);
+ await page.getByRole('navigation',{name:'Research navigation'}).getByRole('link',{name:'Repository',exact:true}).click();await expect(page.locator('.intro')).toHaveCount(0);
  await page.getByRole('link',{name:'Home',exact:true}).click();await expect(page.locator('.intro')).toBeVisible();
  await page.goto('/wiki?page=AI-Human-Collaboration');await expect(page.locator('.wiki-article .scientific-prose')).toContainText('research');
  await expect(page.getByRole('link',{name:'Edit this page on GitHub',exact:true})).toHaveAttribute('href',/AI-Human-Collaboration\/_edit$/);
@@ -44,4 +44,13 @@ test('Quantum Advances runs simulation, circuit, benchmark and evidence ledger',
  await page.getByRole('button',{name:'Generate hypothesis',exact:true}).click();await expect(page.getByText(/Structured fallback|Vercel AI Gateway/)).toBeVisible();await expect(page.locator('article').filter({hasText:/Predictions/}).first()).toBeVisible();
  await page.getByRole('button',{name:'Verify chain',exact:true}).click();await expect(page.getByText(/SHA-256 chain verified/)).toBeVisible();
  expect(errors).toEqual([]);
+});
+
+test('Separate repository, rich archive reader and incoming references',async({page})=>{
+ await page.route('**/api/v1/posts*',route=>route.fulfill({json:{items:[{id:'5',kind:'paper',title:'Quantum-processor research contribution',body:'Primary source annotation with explicit limitations.',author:'test-agent',url:'https://www.nature.com/articles/s41586-022-05424-3',github_url:'https://github.com/MoisesGuilhermeAbreuBarbosa/TheFifthForce/issues/5'}],next_before:null}}));
+ await page.goto('/repository');await expect(page.getByRole('heading',{name:'The research repository'})).toBeVisible();await expect(page.getByRole('heading',{name:'Literature register'})).toHaveCount(0);
+ await page.getByRole('link',{name:/Initial physics investigation/}).click();await expect(page).toHaveURL(/documents\/early-working-paper/);await expect(page.locator('.document-html svg').first()).toBeVisible();
+ const download=page.waitForEvent('download');await page.getByRole('link',{name:'Download original source',exact:true}).click();expect((await download).suggestedFilename()).toBe('early-working-paper.txt');
+ await page.goto('/research/early-working-paper.txt');await expect(page).toHaveURL(/documents\/early-working-paper/);
+ await page.goto('/literature');await expect(page.getByRole('heading',{name:'Quantum-processor research contribution'})).toBeVisible();await page.getByRole('link',{name:'Add a reference',exact:true}).click();await expect(page.getByLabel('Type',{exact:true})).toHaveValue('reference');
 });
