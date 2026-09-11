@@ -8,6 +8,7 @@ test('Dossier chapters render mathematics, navigation and downloadable sources',
   await page.goto('/quantum-advances');
   await page.getByRole('link',{name:'Read the research dossier',exact:true}).click();
   await expect(page.getByRole('heading',{name:/force discrimination/i})).toBeVisible();
+  await page.screenshot({path:'test-results/dossier-desktop.png',fullPage:true});
   for(const chapter of manifest.chapters){
     const response=await page.goto('/quantum-advances/research/'+chapter.slug);
     expect(response?.status()).toBe(200);
@@ -19,6 +20,7 @@ test('Dossier chapters render mathematics, navigation and downloadable sources',
   }
   await page.goto('/quantum-advances/research/coherence');
   expect(await page.locator('article .katex-display').count()).toBeGreaterThan(5);
+  await page.screenshot({path:'test-results/dossier-coherence.png',fullPage:true});
   expect((await request.get('/quantum-advances/research/not-a-chapter')).status()).toBe(404);
   for(const file of ['complete-dossier.md','hypotheses.json','sources.json','benchmark-fixtures.json','research-receipt.json','verify-research-dossier.py']){
     expect((await request.get('/research/dossier/'+file)).ok()).toBeTruthy();
@@ -52,5 +54,6 @@ test('Dossier and equation reader fit mobile viewport',async({page})=>{
     await page.goto(route);
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2)).toBeTruthy();
     await expect(page.getByRole('heading').first()).toBeVisible();
+    await page.screenshot({path:route.endsWith('/coherence')?'test-results/dossier-mobile-coherence.png':'test-results/dossier-mobile.png',fullPage:true});
   }
 });
