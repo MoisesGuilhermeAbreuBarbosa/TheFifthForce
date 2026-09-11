@@ -27,7 +27,7 @@ export function CoherenceExplorer() {
       <label>Coherence η · {eta.toFixed(3)}<input aria-label="Coherence eta" type="range" min="0" max="1" step="0.001" value={eta} onChange={e=>setEta(Number(e.target.value))}/></label>
       <label>Impulse κ · {kappa.toFixed(2)}<input aria-label="Impulse kappa" type="range" min="0" max="2" step="0.01" value={kappa} onChange={e=>setKappa(Number(e.target.value))}/></label>
       <label>Relative phase · {phase}°<input aria-label="Relative phase" type="range" min="0" max="180" step="1" value={phase} onChange={e=>setPhase(Number(e.target.value))}/></label>
-      <label>Calculation<select value={finite?'finite':'weak'} onChange={e=>setFinite(e.target.value==='finite')}><option value="finite">Finite Gaussian impulse</option><option value="weak">Weak-limit coefficient</option></select></label>
+      <label>Calculation<select aria-label="Calculation" value={finite?'finite':'weak'} onChange={e=>setFinite(e.target.value==='finite')}><option value="finite">Finite Gaussian impulse</option><option value="weak">Weak-limit coefficient</option></select></label>
     </div>
     <dl className={styles.metrics}>
       <div><dt>Selected probability</dt><dd data-testid="selected-probability">{(100*result.selectedProbability).toFixed(3)}%</dd></div>

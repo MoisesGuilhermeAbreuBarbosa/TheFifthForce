@@ -35,11 +35,11 @@ test('Explorer matches independent fixtures and exports labeled results',async({
   await expect(page.getByTestId('unconditional-response')).toHaveText('-1.50000');
   await page.getByLabel('Calculation',{exact:true}).selectOption('weak');
   await expect(page.getByTestId('selected-response')).toHaveText('2.00000');
-  await page.getByRole('slider',{name:'Coherence eta',exact:true}).fill('0');
+  await page.getByRole('slider',{name:'Coherence eta',exact:true}).press('Home');
   await expect(page.getByTestId('selected-response')).toHaveText('-1.36000');
-  await page.getByRole('slider',{name:'Coherence eta',exact:true}).fill('1');
+  await page.getByRole('slider',{name:'Coherence eta',exact:true}).press('End');
   await page.getByLabel('Calculation',{exact:true}).selectOption('finite');
-  await page.getByRole('slider',{name:'Relative phase',exact:true}).fill('180');
+  await page.getByRole('slider',{name:'Relative phase',exact:true}).press('End');
   const reverse=fixtures.cases.find(row=>row.eta===1&&row.kappa===0.3&&row.phase_rad>3)!;
   await expect(page.getByTestId('selected-response')).toHaveText(reverse.selected_response.toFixed(5));
   const pending=page.waitForEvent('download');await page.getByRole('button',{name:'Download benchmark JSON'}).click();
