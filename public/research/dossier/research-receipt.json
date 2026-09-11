@@ -1,0 +1,38 @@
+{
+  "receipt_type": "research_receipt",
+  "project": "The Fifth Force",
+  "research_question": "Develop testable extensions of the existing force and quantum research and document implementation gates",
+  "agent": {
+    "name": "Codex",
+    "organization": "OpenAI"
+  },
+  "resources_consulted": [
+    "repository baseline 10ce081",
+    "https://arxiv.org/abs/2602.12266",
+    "https://arxiv.org/abs/1307.4016",
+    "https://arxiv.org/abs/1410.6252",
+    "https://doi.org/10.1038/s41586-024-07561-3",
+    "https://arxiv.org/abs/2002.11761",
+    "https://arxiv.org/abs/2209.15487",
+    "https://arxiv.org/abs/0802.0762",
+    "https://arxiv.org/abs/quant-ph/0005055"
+  ],
+  "findings": [
+    "Existing Panda amplitude is consistent with no additional force",
+    "Finite Gaussian benchmark requires eta*cos(phi)*exp(-kappa^2/8)>17/18 for selected sign reversal",
+    "Joint source geometry and nuisance inference remains to be implemented"
+  ],
+  "evidence_relationship": "contextualizes",
+  "uncertainties": [
+    "No new physical measurements",
+    "Full apparatus and nonlinear stability models remain unresolved"
+  ],
+  "recommended_next_steps": [
+    "Independent numerical reproduction",
+    "Recover apparatus metrology",
+    "Circuit export parity",
+    "Blind challenge validation"
+  ],
+  "timestamp": "2026-09-11T00:00:00Z",
+  "timestamp_precision": "date; midnight is a date placeholder, not an exact activity time"
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Coherence and Force Discrimination",
+  "version": "1.0.0",
+  "date": "2026-09-11",
+  "status": "Research proposals and mathematical benchmarks; no new physical detection",
+  "chapters": [
+    {
+      "slug": "overview",
+      "title": "Research program",
+      "description": "Evidence baseline, five hypotheses, scope and reading guide",
+      "wiki": "Research-Dossier"
+    },
+    {
+      "slug": "conventions",
+      "title": "Conventions and evidence",
+      "description": "Units, force signs, statistical interpretation and model admission",
+      "wiki": "Research-Conventions"
+    },
+    {
+      "slug": "coherence",
+      "title": "H1 \u00b7 Coherence threshold",
+      "description": "Weak-limit derivation, finite Gaussian model and experimental protocol",
+      "wiki": "Hypothesis-Coherence"
+    },
+    {
+      "slug": "finite-range",
+      "title": "H2 \u00b7 Force and geometry",
+      "description": "Finite-source response, correlated likelihood and identifiability",
+      "wiki": "Hypothesis-Finite-Range"
+    },
+    {
+      "slug": "screened-vector",
+      "title": "H3 \u00b7 Screened vector",
+      "description": "Environmental and composition tests, solver inputs and stability",
+      "wiki": "Hypothesis-Screened-Vector"
+    },
+    {
+      "slug": "systematics",
+      "title": "H4 \u00b7 Conventional competitors",
+      "description": "Interventions, transfer functions, blind analysis and conservation",
+      "wiki": "Hypothesis-Systematics"
+    },
+    {
+      "slug": "adaptive-discovery",
+      "title": "H5 \u00b7 Adaptive discovery",
+      "description": "Information gain, strong baselines and quantum resource accounting",
+      "wiki": "Hypothesis-Adaptive-Discovery"
+    },
+    {
+      "slug": "implementation",
+      "title": "Development roadmap",
+      "description": "Research contracts, capability states, work packages and acceptance gates",
+      "wiki": "Research-Implementation"
+    },
+    {
+      "slug": "sources",
+      "title": "Sources and provenance",
+      "description": "Primary references, attribution, review limits and unresolved records",
+      "wiki": "Research-Dossier-Sources"
+    }
+  ]
+}

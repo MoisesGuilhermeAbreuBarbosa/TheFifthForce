@@ -10,7 +10,7 @@
     "build": "next build --webpack",
     "start": "next start --hostname 0.0.0.0",
     "test": "node --test tests/*.test.mjs",
-    "prebuild": "python3 scripts/prepare-data-views.py && node scripts/build-transcriber.mjs"
+    "prebuild": "python3 scripts/prepare-research-dossier.py && python3 scripts/prepare-data-views.py && node scripts/build-transcriber.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

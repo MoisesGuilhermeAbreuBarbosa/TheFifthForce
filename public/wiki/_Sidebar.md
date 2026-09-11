@@ -15,6 +15,10 @@
 - [[Anti-Gravity]]
 - [[References|Reference Library]]
 
+**Quantum advances**
+- [[Quantum Advances|Quantum-Advances]]
+- [[QAGRA — Quantum-Assisted Gravitational Research Architecture|QAGRA]]
+
 **Core investigation tracks**
 - Antimatter gravity
 - Equivalence principle
@@ -23,9 +27,23 @@
 - Superconductors & gravity
 - Rotating-mass claims
 - Anomalous propulsion
+- Quantum-assisted gravity research
+- Quantum sensing & metrology
+- Quantum computing & AI
 - Historical programs
 - Replication & metrology
 
 ---
 
 > Evidence first. Every useful search can leave a research trail; every scientific claim remains provisional until supported by reproducible evidence.
+
+**Research dossier — September 2026**
+- [[Research-Dossier]]
+- [[Research-Conventions]]
+- [[Hypothesis-Coherence]]
+- [[Hypothesis-Finite-Range]]
+- [[Hypothesis-Screened-Vector]]
+- [[Hypothesis-Systematics]]
+- [[Hypothesis-Adaptive-Discovery]]
+- [[Research-Implementation]]
+- [[Research-Dossier-Sources]]

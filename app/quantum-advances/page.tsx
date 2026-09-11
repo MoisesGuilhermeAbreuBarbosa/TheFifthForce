@@ -24,8 +24,9 @@ export default function QuantumAdvancesPage(){
     </section>
     <div className="callout" style={{marginTop:0}}>
       <div><p className="eyebrow">SCIENTIFIC GUARDRAIL</p><h2>Quantum computation accelerates analysis only where the algorithm earns the advantage.</h2></div>
-      <a className="outline" href="/wiki/QAGRA" target="_blank" rel="noreferrer">QAGRA documentation</a>
+      <a className="outline" href="/wiki?page=QAGRA" target="_blank" rel="noreferrer">QAGRA documentation</a>
     </div>
+    <div className="callout" style={{marginTop:24}}><div><p className="eyebrow">NEW · DETAILED RESEARCH DOSSIER</p><h2>Coherence and Force Discrimination</h2><p>Five hypotheses, full derivations, experimental protocols, source records and development acceptance gates. Includes a finite Gaussian coherence benchmark.</p></div><a className="primary" href="/quantum-advances/research">Read the research dossier</a></div>
     <QuantumAdvancesLab/>
   </main>;
 }

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "S1",
+    "authors": "Saldanha, Marletto and Vedral",
+    "title": "Repulsive Gravitational Force as a Witness of the Quantum Nature of Gravity",
+    "url": "https://arxiv.org/abs/2602.12266",
+    "source_type": "theoretical_preprint",
+    "verification_scope": "Abstract and accessible HTML consulted"
+  },
+  {
+    "id": "S2",
+    "authors": "Ferrie and Combes",
+    "title": "Weak value amplification is suboptimal for estimation and detection",
+    "url": "https://arxiv.org/abs/1307.4016",
+    "source_type": "theoretical_paper",
+    "verification_scope": "Abstract consulted"
+  },
+  {
+    "id": "S3",
+    "authors": "Knee, Combes, Ferrie and Gauger",
+    "title": "Weak-value amplification: state of play",
+    "url": "https://arxiv.org/abs/1410.6252",
+    "source_type": "review",
+    "verification_scope": "Abstract consulted"
+  },
+  {
+    "id": "S4",
+    "authors": "Panda et al.",
+    "title": "Measuring gravitational attraction with a lattice atom interferometer",
+    "url": "https://doi.org/10.1038/s41586-024-07561-3",
+    "source_type": "experiment",
+    "verification_scope": "Project reanalysis and deposited measurements reviewed"
+  },
+  {
+    "id": "S5",
+    "authors": "Lee et al.",
+    "title": "New Test of the Gravitational 1/r² Law at Separations down to 52 μm",
+    "url": "https://arxiv.org/abs/2002.11761",
+    "source_type": "experiment",
+    "verification_scope": "Primary abstract/record consulted"
+  },
+  {
+    "id": "S6",
+    "authors": "Touboul et al.",
+    "title": "MICROSCOPE mission: final results of the test of the Equivalence Principle",
+    "url": "https://arxiv.org/abs/2209.15487",
+    "source_type": "experiment",
+    "verification_scope": "Abstract consulted"
+  },
+  {
+    "id": "S7",
+    "authors": "Nelson and Walsh",
+    "title": "Chameleon Vector Bosons",
+    "url": "https://arxiv.org/abs/0802.0762",
+    "source_type": "theoretical_paper",
+    "verification_scope": "Abstract and project equation summary consulted"
+  },
+  {
+    "id": "S8",
+    "authors": "Brassard, Høyer, Mosca and Tapp",
+    "title": "Quantum Amplitude Amplification and Estimation",
+    "url": "https://arxiv.org/abs/quant-ph/0005055",
+    "source_type": "theoretical_paper",
+    "verification_scope": "Abstract and bibliographic record consulted"
+  }
+]

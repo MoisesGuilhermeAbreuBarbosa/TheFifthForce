@@ -1,5 +1,20 @@
 # Current Status
 
+_Last updated: 11 September 2026_
+
+## Current release
+
+The repository contains a working Next.js site, literature register, source downloads, embedded video page, GitHub contribution flow and a browser QAGRA prototype. The new [[Research-Dossier]] adds nine chapters, five structured hypotheses, numerical benchmark verification and an interactive finite-Gaussian coherence explorer.
+
+Canonical research remains versioned in GitHub. Public contributions use GitHub Issues; the quantum session ledger is browser-local. Shared simulation storage, physical quantum execution, a full geometry-aware inference engine and nonlinear screened-vector stability remain unimplemented. See [[Research-Implementation]] for explicit acceptance gates.
+
+No new physical force detection or quantum-computational advantage is claimed. Production deployment must be checked independently of a source commit.
+
+## Historical reconstruction snapshot
+
+The following earlier status is retained for history. Its statements that the website, literature or video page are absent are superseded by the current release summary above.
+
+
 _Last updated: September 2026_
 
 ## Overall status

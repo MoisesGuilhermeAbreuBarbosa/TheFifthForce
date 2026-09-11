@@ -1,0 +1,372 @@
+[
+  {
+    "id": "CFD-H1",
+    "title": "Coherence threshold for conditional response",
+    "kind": "quantum_model_prediction",
+    "statement": "In the specified Gaussian impulse model, the selected mean is outward only if eta*cos(phi)*exp(-kappa^2/8) > 17/18.",
+    "chapter": "coherence",
+    "equation": "p_f = 0.50 - 0.48*v; response_f = (-0.68 + 0.72*v)/p_f; v = eta*cos(phi)*exp(-kappa^2/8)",
+    "parameters": [
+      {
+        "name": "eta",
+        "units": "dimensionless",
+        "domain": "[0,1]"
+      },
+      {
+        "name": "phi",
+        "units": "radian",
+        "domain": "real"
+      },
+      {
+        "name": "kappa",
+        "units": "dimensionless",
+        "domain": "[0,infinity)"
+      },
+      {
+        "name": "a",
+        "units": "m/s^2",
+        "domain": "positive"
+      }
+    ],
+    "assumptions": [
+      "Equal source populations; orthogonal fixed branches",
+      "Branch accelerations -a and -2a",
+      "Real Gaussian probe with prescribed impulses",
+      "Complete two-outcome measurement; calibrated detection"
+    ],
+    "predictions": [
+      "Threshold at v=17/18",
+      "Both outcome probabilities and conditional means follow derived formulas",
+      "Unconditional acceleration-equivalent mean remains -1.5a"
+    ],
+    "competitors": [
+      "Electromagnetic quantum interference",
+      "Selection-dependent detection",
+      "Preparation/trap impulses"
+    ],
+    "falsification": [
+      "Measured joint distributions contradict calibrated model",
+      "Same claimed coherence effect survives complete dephasing"
+    ],
+    "protocol": [
+      "Calibrate coherence independently",
+      "Randomize phase and coherence",
+      "Record both outcomes and no-detection events"
+    ],
+    "acceptance": [
+      "Independent integration reproduces moments",
+      "Finite model recovers weak limit",
+      "Gravity-specific backgrounds separately constrained"
+    ],
+    "sources": [
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "atlas_subjects": [
+      "AG-R016",
+      "AG-R019",
+      "AG-R020",
+      "AG-R025"
+    ],
+    "implementation": "Analytic and finite Gaussian benchmark plus browser explorer delivered",
+    "limitations": [
+      "No physical gravity experiment",
+      "No source recoil or full apparatus evolution"
+    ],
+    "version": "1.0.0",
+    "status": "proposed_unreviewed",
+    "date": "2026-09-11",
+    "evidence_note": "AI-assisted research proposal, not primary experimental evidence"
+  },
+  {
+    "id": "CFD-H2",
+    "title": "Force and geometry identifiability",
+    "kind": "experimental_design",
+    "statement": "A suitable multi-configuration dataset separates a finite-range interaction from admissible metrology and nuisance shifts.",
+    "chapter": "finite-range",
+    "equation": "d_i = a_N(g_i) + alpha*K_i(lambda,g_i) + sum_j b_j*X_ij + epsilon_i",
+    "parameters": [
+      {
+        "name": "alpha",
+        "units": "dimensionless",
+        "domain": "real; positive adds attraction"
+      },
+      {
+        "name": "lambda",
+        "units": "m",
+        "domain": "positive"
+      },
+      {
+        "name": "geometry",
+        "units": "m and kg/m^3",
+        "domain": "survey-constrained"
+      }
+    ],
+    "assumptions": [
+      "Finite-source response and detector estimator specified",
+      "Covariance and metrology priors recorded",
+      "Held-out configuration independent of tuning"
+    ],
+    "predictions": [
+      "One parameter set predicts multiple configurations",
+      "Physics sensitivity survives nuisance projection"
+    ],
+    "competitors": [
+      "Source/probe coordinate error",
+      "Correlated drift",
+      "Incorrect density or trajectory"
+    ],
+    "falsification": [
+      "Allowed geometry shifts explain residual",
+      "Held-out geometry prediction fails"
+    ],
+    "protocol": [
+      "Recover metrology",
+      "Compute finite fields and detector response",
+      "Blind injections and held-out geometry"
+    ],
+    "acceptance": [
+      "Analytic limits and convergence",
+      "Calibrated coverage and false-positive rates",
+      "Data-only and prior-assisted identifiability reported"
+    ],
+    "sources": [
+      "S4",
+      "S5",
+      "S6"
+    ],
+    "atlas_subjects": [
+      "AG-R078",
+      "AG-R084",
+      "AG-R140",
+      "AG-R149"
+    ],
+    "implementation": "Detailed specification; joint solver/inference not delivered",
+    "limitations": [
+      "Existing Panda mean cannot determine strength and range",
+      "Range unidentified at zero coupling"
+    ],
+    "version": "1.0.0",
+    "status": "proposed_unreviewed",
+    "date": "2026-09-11",
+    "evidence_note": "AI-assisted research proposal, not primary experimental evidence"
+  },
+  {
+    "id": "CFD-H3",
+    "title": "Environment and composition in a screened vector model",
+    "kind": "speculative_physical_model",
+    "statement": "One specified screened-vector model predicts joint distance, environmental and composition dependence compatible with relevant constraints.",
+    "chapter": "screened-vector",
+    "equation": "laplacian(f)=(m_s^2+epsilon*f^2-q^2*omega^2)*f; laplacian(omega)=-g^2*n+2*q^2*g^2*omega*f^2",
+    "parameters": [
+      {
+        "name": "g and q",
+        "units": "natural-unit dimensionless",
+        "domain": "specified charge convention"
+      },
+      {
+        "name": "m_s",
+        "units": "natural-unit energy",
+        "domain": "model-defined"
+      },
+      {
+        "name": "environment",
+        "units": "density/charge map",
+        "domain": "measured geometry and composition"
+      }
+    ],
+    "assumptions": [
+      "Action, units, charge sector and exterior conditions fixed",
+      "Environmental change physically characterized",
+      "Dynamical constraints included for stability claims"
+    ],
+    "predictions": [
+      "Single parameter set predicts environment and composition scans",
+      "Linear limit yields specified charge-dependent Yukawa response"
+    ],
+    "competitors": [
+      "Ordinary environmental gravity changes",
+      "Magnetic/material changes",
+      "Thermal and surface forces"
+    ],
+    "falsification": [
+      "No stable physical branch",
+      "Relevant constraints exclude proposed point",
+      "Held-out environment prediction fails"
+    ],
+    "protocol": [
+      "Construct density and charge maps",
+      "Solve coupled static system",
+      "Analyze constrained dynamics",
+      "Compare all configurations and constraints"
+    ],
+    "acceptance": [
+      "Observable mesh/domain convergence",
+      "Independent stability check",
+      "Compatible measurable parameter region if any"
+    ],
+    "sources": [
+      "S7",
+      "S5",
+      "S6"
+    ],
+    "atlas_subjects": [
+      "AG-R072",
+      "AG-R074",
+      "AG-R134",
+      "AG-R136"
+    ],
+    "implementation": "Theory and solver requirements documented; apparatus solver unresolved",
+    "limitations": [
+      "No validated controller",
+      "No global exclusion analysis",
+      "Static Hessian is not full dynamical spectrum"
+    ],
+    "version": "1.0.0",
+    "status": "proposed_unreviewed",
+    "date": "2026-09-11",
+    "evidence_note": "AI-assisted research proposal, not primary experimental evidence"
+  },
+  {
+    "id": "CFD-H4",
+    "title": "Calibrated conventional competitors",
+    "kind": "conventional_competitor",
+    "statement": "Independently calibrated disturbance responses predict source-correlated apparent force in held-out runs.",
+    "chapter": "systematics",
+    "equation": "y(omega)=a_N(omega)+a_X(omega)+sum_j H_j(omega)*u_j(omega)+epsilon(omega)",
+    "parameters": [
+      {
+        "name": "H_j",
+        "units": "output/input transfer units",
+        "domain": "calibration-constrained complex response"
+      },
+      {
+        "name": "u_j",
+        "units": "channel-specific SI",
+        "domain": "measured disturbances"
+      }
+    ],
+    "assumptions": [
+      "Linear stationary approximation validated where used",
+      "Calibration split from final science data",
+      "Disturbance channels independently excited"
+    ],
+    "predictions": [
+      "Frozen nuisance model predicts held-out intervention results",
+      "Motion/thermal artifacts follow measured transfer functions"
+    ],
+    "competitors": [
+      "Real additional force",
+      "Unmeasured disturbance",
+      "Nonlinear or nonstationary response"
+    ],
+    "falsification": [
+      "Adequately calibrated model fails held-out prediction",
+      "Residual survives sufficiently sensitive targeted interventions"
+    ],
+    "protocol": [
+      "Dummy motion and matched loads",
+      "Field/charge interventions",
+      "Freeze calibration",
+      "Blind injection and null challenges"
+    ],
+    "acceptance": [
+      "Coverage and false-positive calibration",
+      "No hidden test-label leakage",
+      "Complete record of rejected/no-detection outcomes"
+    ],
+    "sources": [
+      "S4"
+    ],
+    "atlas_subjects": [
+      "AG-R087",
+      "AG-R093",
+      "AG-R095",
+      "AG-R099",
+      "AG-R142"
+    ],
+    "implementation": "Protocol specified; apparatus calibration data not supplied",
+    "limitations": [
+      "Unknown artifact absence is not proof of new physics",
+      "Single reversal not uniquely gravitational"
+    ],
+    "version": "1.0.0",
+    "status": "proposed_unreviewed",
+    "date": "2026-09-11",
+    "evidence_note": "AI-assisted research proposal, not primary experimental evidence"
+  },
+  {
+    "id": "CFD-H5",
+    "title": "Adaptive experiment selection",
+    "kind": "computational_hypothesis",
+    "statement": "Adaptive selection improves resources to a registered discrimination target over fixed/random selection at equal validity standards.",
+    "chapter": "adaptive-discovery",
+    "equation": "d_star = argmax_d E_y[KL(P(H|D,y,d)||P(H|D))]/C(d)",
+    "parameters": [
+      {
+        "name": "C(d)",
+        "units": "declared resource units",
+        "domain": "strictly positive"
+      },
+      {
+        "name": "model probabilities",
+        "units": "dimensionless",
+        "domain": "normalized with stated priors"
+      },
+      {
+        "name": "budget",
+        "units": "resource units",
+        "domain": "predeclared"
+      }
+    ],
+    "assumptions": [
+      "Equal allowed controls and information for baselines",
+      "Held-out scenarios and stopping rules",
+      "Full execution costs counted"
+    ],
+    "predictions": [
+      "Lower resource distribution at equal false-positive/coverage criteria if hypothesis holds"
+    ],
+    "competitors": [
+      "Fixed space-filling design",
+      "Random selection",
+      "Strong classical adaptive methods"
+    ],
+    "falsification": [
+      "No repeatable equal-budget improvement",
+      "Improvement disappears under model mismatch or full costs"
+    ],
+    "protocol": [
+      "Seal test scenarios",
+      "Benchmark paired cases and seeds",
+      "Include null/artifact/new-force cases",
+      "Publish costs and failures"
+    ],
+    "acceptance": [
+      "Repeated held-out comparison",
+      "Calibrated uncertainty",
+      "Quantum hardware provenance for hardware claims"
+    ],
+    "sources": [
+      "S2",
+      "S3",
+      "S8"
+    ],
+    "atlas_subjects": [
+      "AG-R099",
+      "AG-R126",
+      "AG-R144",
+      "AG-R148"
+    ],
+    "implementation": "Benchmark specification; adaptive service and hardware execution not delivered",
+    "limitations": [
+      "Four-qubit simulation is not quantum speedup",
+      "Information objective depends on model set and priors"
+    ],
+    "version": "1.0.0",
+    "status": "proposed_unreviewed",
+    "date": "2026-09-11",
+    "evidence_note": "AI-assisted research proposal, not primary experimental evidence"
+  }
+]

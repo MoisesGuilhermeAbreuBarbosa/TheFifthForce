@@ -64,3 +64,9 @@ Code/research file commits on `restore/interactive-app` trigger Vercel productio
 Home is a dedicated landing view. Shared navigation includes consistent icons, a subtle Home link, Literature, and Quantum Advances. `/repository` and `/literature` are separate pages. Literature combines the curated file with a separately labeled incoming GitHub paper/reference feed and a reference-submission form. Publishing still finishes on GitHub; submissions do not become curated evidence automatically.
 
 `/documents/[slug]` presents typeset archived papers, Markdown equations, numerical data charts or readable source code as appropriate. Original downloads use `/api/documents/[slug]/raw`; legacy early-paper text links redirect to the rich readers. Original assets remain in GitHub.
+
+## Coherence and Force Discrimination dossier
+
+Open `/quantum-advances/research` for the nine-chapter research program, five structured hypotheses, experimental controls, source provenance and implementation roadmap. The H1 explorer compares selected, complementary and unconditional outcomes in a specified finite Gaussian impulse model. These are mathematical benchmarks, not physical detections.
+
+Canonical chapters: `public/research/dossier/`. Run `python3 scripts/prepare-research-dossier.py` after editing them to refresh complete Markdown and Wiki copies. Run `python3 scripts/verify-research-dossier.py` (NumPy required) to independently check numerical distributions, fixtures and the existing Panda summary. The hypothesis contract is `schemas/research-hypothesis.schema.json`. Future capabilities are explicitly marked in the implementation chapter.

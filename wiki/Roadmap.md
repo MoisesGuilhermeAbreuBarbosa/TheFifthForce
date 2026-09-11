@@ -1,5 +1,7 @@
 # Project Roadmap
 
+> **11 September 2026 research update:** [[Research-Dossier]] develops five hypotheses with full mathematics, controls, source records and implementation gates. [[Research-Implementation]] distinguishes delivered capabilities from planned work.
+
 This roadmap covers both the **research system** and the **software platform**.
 
 ## Phase 1 — Wiki and source foundation

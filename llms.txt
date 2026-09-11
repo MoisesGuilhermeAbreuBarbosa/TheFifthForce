@@ -36,3 +36,8 @@ On project-controlled search and API surfaces, searches should generate privacy-
 ## Contribution principle
 
 Preserve primary-source provenance, uncertainty, contradictions, replication status, datasets, code, and useful next questions. Do not fabricate citations or treat AI-generated analysis as primary evidence.
+Research dossier: /quantum-advances/research
+Structured hypotheses: /research/dossier/hypotheses.json
+Source provenance: /research/dossier/sources.json
+Complete dossier: /research/dossier/complete-dossier.md
+These are proposed hypotheses and analytic benchmarks, not experimental findings.

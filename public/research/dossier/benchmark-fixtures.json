@@ -1,0 +1,70 @@
+{
+  "kind": "analytic_benchmark",
+  "model_version": "1.0.0",
+  "note": "Dimensionless Gaussian impulse calculations; not sensor data.",
+  "cases": [
+    {
+      "eta": 0,
+      "kappa": 0,
+      "phase_rad": 0,
+      "selected_probability": 0.5,
+      "selected_response": -1.36,
+      "complementary_response": -1.64,
+      "unconditional_response": -1.5
+    },
+    {
+      "eta": 0.9,
+      "kappa": 0,
+      "phase_rad": 0,
+      "selected_probability": 0.068,
+      "selected_response": -0.47058823529411803,
+      "complementary_response": -1.5751072961373391,
+      "unconditional_response": -1.5
+    },
+    {
+      "eta": 0.95,
+      "kappa": 0,
+      "phase_rad": 0,
+      "selected_probability": 0.04400000000000004,
+      "selected_response": 0.09090909090908839,
+      "complementary_response": -1.5732217573221758,
+      "unconditional_response": -1.5
+    },
+    {
+      "eta": 1,
+      "kappa": 0,
+      "phase_rad": 0,
+      "selected_probability": 0.020000000000000018,
+      "selected_response": 1.9999999999999944,
+      "complementary_response": -1.5714285714285714,
+      "unconditional_response": -1.5
+    },
+    {
+      "eta": 1,
+      "kappa": 0.3,
+      "phase_rad": 0,
+      "selected_probability": 0.025369738586608126,
+      "selected_response": 1.2591927981847904,
+      "complementary_response": -1.5718221081074244,
+      "unconditional_response": -1.5
+    },
+    {
+      "eta": 1,
+      "kappa": 1,
+      "phase_rad": 0,
+      "selected_probability": 0.07640148675939418,
+      "selected_response": -0.5837874631884329,
+      "complementary_response": -1.575790507451547,
+      "unconditional_response": -1.5
+    },
+    {
+      "eta": 1,
+      "kappa": 0.3,
+      "phase_rad": 3.141592653589793,
+      "selected_probability": 0.9746302614133919,
+      "selected_response": -1.4281778918925754,
+      "complementary_response": -4.2591927981848015,
+      "unconditional_response": -1.4999999999999998
+    }
+  ]
+}

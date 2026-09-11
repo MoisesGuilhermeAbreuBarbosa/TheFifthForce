@@ -1,5 +1,7 @@
 # The Fifth Force Wiki
 
+> **11 September 2026 research update:** [[Research-Dossier]] develops five hypotheses with full mathematics, controls, source records and implementation gates. [[Research-Implementation]] distinguishes delivered capabilities from planned work.
+
 Welcome to the project wiki for **The Fifth Force** — an open research and software initiative for organizing, evaluating, and extending serious research into anti-gravity, gravity modification, anomalous propulsion, quantum-assisted gravitational research, and adjacent physics.
 
 ## Target of the research
