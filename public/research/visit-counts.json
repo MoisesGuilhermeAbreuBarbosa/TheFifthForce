@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "open-field.visit-counts.v1",
+  "archivedAt": null,
+  "source": "aggregate-request-counter",
+  "measurement": "landing-page accesses",
+  "total": 0,
+  "human": 0,
+  "ai": 0,
+  "crawler": 0,
+  "privacy": "Aggregate counts only; no IP addresses, cookies, or visitor identifiers."
+}
