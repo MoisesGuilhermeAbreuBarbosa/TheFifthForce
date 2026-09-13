@@ -78,3 +78,20 @@ Canonical chapters: `public/research/dossier/`. Run `python3 scripts/prepare-res
 The current canonical library is `public/research/literature.json` (96 records, including 20 primary abstract/landing-page checks dated 2026-09-13). `/literature` searches authors, IDs, claims and limitations, filters by field/type, sorts by publication year and exports selections. `/api/v1/library` supports `q`, `category`, `evidence` and `sort`. The archived Rev02 workbook and atlas retain their historical content. Review scopes distinguish inherited annotations from new primary-record checks.
 
 `public/research/frontiers/investigations.json` is the canonical new program; run `python3 scripts/prepare-frontiers.py` to regenerate its Markdown and Wiki exports. GitHub remains the persistent source store. No external database credentials are needed or introduced. The production `anti-gravity-site-rev02` deployment was observed on `main` on 2026-09-13; earlier branch guidance above is historical.
+
+### On-site documentation and research database
+
+The literature register opens on-site source guides first. The documentation
+archive at `/literature/documentation` contains 102 formatted editorial records:
+96 library sources and six additional sources from the original research dossier.
+Each record separates summary, interpretation, checks, provenance and the
+complementary original-publication link. These guides are original annotations,
+not full-text reproductions of third-party publications. Legacy review gaps
+remain visible; no publisher access or redistribution rights are implied.
+
+`scripts/prepare-documentation.py` builds Markdown downloads and a verified,
+read-only SQLite publication database with source notes, investigation bodies
+and foreign-keyed citations. Download it at
+`/research/documentation/library.sqlite`; SQL and JSON exports are available
+alongside it. GitHub JSON remains the canonical editable store. This adds no
+public database-write endpoint or user account system.

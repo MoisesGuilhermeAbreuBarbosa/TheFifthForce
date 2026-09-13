@@ -7,7 +7,7 @@ records=json.loads((folder/'investigations.json').read_text())
 sources={s['id']:s for s in json.loads((root/'public/research/literature.json').read_text())}
 index=['# Research Frontiers\n\nSix proposed investigation designs · 13 September 2026\n\nAI-assisted proposals, not peer-reviewed findings or new physical detections.\n']
 for x in records:
-    refs='\n'.join(f"- [{id}: {sources[id]['topic']}]({sources[id]['source']})" for id in x['sources'])
+    refs='\n'.join(f"- [{id}: {sources[id]['topic']}](https://anti-gravity-site-rev02.vercel.app/literature/{id})" for id in x['sources'])
     content=f"# {x['title']}\n\n{x['id']} · {x['status']} · {x['date']}\n\nAI-assisted research design; not peer reviewed. No new experimental result.\n\n{x['body']}\n\n## Sources\n\n{refs}\n"
     (folder/(x['slug']+'.md')).write_text(content)
     index.append(f"## {x['id']} — {x['title']}\n\n{x['summary']}\n\n[Read the complete investigation](https://anti-gravity-site-rev02.vercel.app/investigations/{x['slug']}) · [Editable source](https://github.com/MoisesGuilhermeAbreuBarbosa/TheFifthForce/blob/main/public/research/frontiers/{x['slug']}.md)\n")
