@@ -10,7 +10,9 @@ Can a quantum algorithm estimate a useful observable in a gravity-related model 
 ## Choose a bounded problem
 Start with either a low-energy eigenvalue of a small discretized Hamiltonian or an expectation associated with a sparse linear system. For a Hamiltonian encoded as Pauli operators,
 
-$$\hat H=\sum_j c_j\hat P_j,\qquad E(\theta)=\sum_j c_j\langle\psi(\theta)|\hat P_j|\psi(\theta)\rangle.$$
+$$
+\hat H=\sum_j c_j\hat P_j,\qquad E(\theta)=\sum_j c_j\langle\psi(\theta)|\hat P_j|\psi(\theta)\rangle.
+$$
 
 Specify units, boundary conditions and discretization before encoding. A variational minimum within an ansatz is not proof of the exact ground state or dynamical stability. Compare it with exact diagonalization for small problems and a suitable sparse classical solver as sizes grow.
 
@@ -19,7 +21,9 @@ For a linear-system algorithm, explicitly state sparsity, condition number, stat
 ## Full cost ledger
 Use the same target error and success probability for every method. Record
 
-$$T_{\rm total}=T_{\rm preparation}+T_{\rm compilation}+T_{\rm queue}+T_{\rm execution}+T_{\rm readout}+T_{\rm classical}.$$
+$$
+T_{\rm total}=T_{\rm preparation}+T_{\rm compilation}+T_{\rm queue}+T_{\rm execution}+T_{\rm readout}+T_{\rm classical}.
+$$
 
 Report algorithm execution separately from queue delay as well as the total. Record qubit count, two-qubit gate count, depth, shots, optimizer calls, noise mitigation, hardware calibration and random seeds. Amplitude-estimation speedups depend on coherent oracle access; sampling a circuit repeatedly is not automatically amplitude estimation.
 

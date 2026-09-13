@@ -10,13 +10,17 @@ Can a jointly fitted separation scan and source-reversal measurement distinguish
 ## Model and measurable prediction
 For ideal point masses, adopt the conventional Yukawa parameterization
 
-$$V(r)=-\frac{GMm}{r}\left(1+\alpha e^{-r/\lambda}\right),\qquad F_r=-\frac{GMm}{r^2}\left[1+\alpha(1+r/\lambda)e^{-r/\lambda}\right].$$
+$$
+V(r)=-\frac{GMm}{r}\left(1+\alpha e^{-r/\lambda}\right),\qquad F_r=-\frac{GMm}{r^2}\left[1+\alpha(1+r/\lambda)e^{-r/\lambda}\right].
+$$
 
 Here $G$ is Newton’s constant, $M,m$ are masses, $r>0$ is center separation, $\alpha$ is a signed relative coupling and $\lambda>0$ is an interaction range. Negative $\alpha$ means a repulsive *correction*; the total force need not be repulsive. The browser explorer implements this point-mass expression only.
 
 For a real source, replace the point potential by
 
-$$\Phi(\mathbf x)=-G\int d^3x'\,\frac{\rho(\mathbf x')}{|\mathbf x-\mathbf x'|}\left[1+\alpha e^{-|\mathbf x-\mathbf x'|/\lambda}\right],\qquad \mathbf a=-\nabla\Phi.$$
+$$
+\Phi(\mathbf x)=-G\int d^3x'\,\frac{\rho(\mathbf x')}{|\mathbf x-\mathbf x'|}\left[1+\alpha e^{-|\mathbf x-\mathbf x'|/\lambda}\right],\qquad \mathbf a=-\nabla\Phi.
+$$
 
 Average the response over the measured atomic cloud or probe volume. The proposed discriminant is the complete separation-dependent response, including reversal sign and phase, not a single nonzero residual.
 

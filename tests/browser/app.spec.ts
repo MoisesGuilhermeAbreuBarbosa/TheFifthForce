@@ -40,7 +40,7 @@ test('Quantum Advances runs simulation, circuit, benchmark and evidence ledger',
  await page.goto('/quantum-advances');
  await expect(page.getByRole('heading',{name:/Quantum advances/})).toBeVisible();
  await expect(page.getByRole('link',{name:'Quantum Advances',exact:true})).toHaveAttribute('aria-current','page');
- await page.getByRole('button',{name:'Run simulation',exact:true}).click();await expect(page.getByText(/Verified append/)).toBeVisible();
+ await page.getByRole('button',{name:'Run locally',exact:true}).click();await expect(page.getByText(/Verified append/)).toBeVisible();
  await page.getByRole('button',{name:'Execute state-vector circuit',exact:true}).click();await expect(page.getByText('OpenQASM 3',{exact:true})).toBeVisible();await expect(page.getByText(/state-vector/).first()).toBeVisible();
  await page.getByRole('button',{name:'Run benchmark',exact:true}).click();await expect(page.getByText('Classical accuracy',{exact:true})).toBeVisible();await expect(page.getByText('Quantum-feature accuracy',{exact:true})).toBeVisible();
  await page.getByRole('button',{name:'Generate hypothesis',exact:true}).click();await expect(page.getByText(/Structured fallback|Vercel AI Gateway/)).toBeVisible();await expect(page.locator('article').filter({hasText:/Predictions/}).first()).toBeVisible();

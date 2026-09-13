@@ -10,13 +10,17 @@ Can an anomalous-force interpretation survive a calibrated library of ordinary e
 ## Measurement model
 Represent the calibrated force time series as
 
-$$y(t)=A s(t)+\sum_j b_j x_j(t)+d(t)+\epsilon(t).$$
+$$
+y(t)=A s(t)+\sum_j b_j x_j(t)+d(t)+\epsilon(t).
+$$
 
 Here $s(t)$ is a predefined unit-amplitude candidate template, $x_j$ are measured environmental channels, $b_j$ are calibrated transfer coefficients, $d$ is a drift model and $\epsilon$ is residual noise. Correlation between $s$ and an environmental channel can destroy identifiability; fitting both terms does not automatically resolve it.
 
 For a harmonic oscillator readout, a useful linear benchmark is
 
-$$\chi(\omega)=\frac{1}{m(\omega_0^2-\omega^2+i\Gamma\omega)},\qquad x(\omega)=\chi(\omega)F(\omega).$$
+$$
+\chi(\omega)=\frac{1}{m(\omega_0^2-\omega^2+i\Gamma\omega)},\qquad x(\omega)=\chi(\omega)F(\omega).
+$$
 
 The mass $m$, resonance $\omega_0$, damping rate $\Gamma$ and readout calibration must be measured. A resonant displacement is not a force until divided by the calibrated transfer function.
 

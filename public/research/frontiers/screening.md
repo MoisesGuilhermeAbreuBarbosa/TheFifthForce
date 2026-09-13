@@ -10,11 +10,15 @@ Can a source–chamber–probe model predict a reproducible environmental signat
 ## Coupled field problem
 In natural units with $c=\hbar=1$, a quasistatic, nonrelativistic scalar satisfies
 
-$$\nabla^2\phi=\frac{\partial V_{\rm eff}}{\partial\phi},\qquad V_{\rm eff}(\phi,\rho)=V(\phi)+\rho A(\phi).$$
+$$
+\nabla^2\phi=\frac{\partial V_{\rm eff}}{\partial\phi},\qquad V_{\rm eff}(\phi,\rho)=V(\phi)+\rho A(\phi).
+$$
 
 A chameleon benchmark uses $V=\Lambda^{4+n}/\phi^n$ with $n>0$, $\phi>0$, and $A\simeq1+\beta\phi/M_{\rm Pl}$ in the small-coupling expansion. A symmetron benchmark uses
 
-$$V_{\rm eff}=\frac12\left(\frac{\rho}{M_s^2}-\mu^2\right)\phi^2+\frac{g_s}{4}\phi^4,\qquad g_s>0.$$
+$$
+V_{\rm eff}=\frac12\left(\frac{\rho}{M_s^2}-\mu^2\right)\phi^2+\frac{g_s}{4}\phi^4,\qquad g_s>0.
+$$
 
 The unscreened point-probe acceleration is $\mathbf a_\phi=-\nabla\ln A$. Extended screened probes require their own field response. Do not confuse the coupling scale $M_s$ with a source mass. Convert natural-unit predictions to SI before comparing measured accelerations.
 

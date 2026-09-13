@@ -10,11 +10,15 @@ Would a material-dependent response distinguish an extra interaction from a resc
 ## Parameterization
 Define the dimensionless Eötvös parameter using consistently oriented acceleration components,
 
-$$\eta_{AB}=\frac{2(a_A-a_B)}{a_A+a_B}.$$
+$$
+\eta_{AB}=\frac{2(a_A-a_B)}{a_A+a_B}.
+$$
 
 For illustration, let an additional point-source force have material factors $q_A,q_B,q_S$ and coupling $\alpha$. At first order in a small correction,
 
-$$\eta_{AB}\simeq\alpha q_S(q_A-q_B)(1+r/\lambda)e^{-r/\lambda}.$$
+$$
+\eta_{AB}\simeq\alpha q_S(q_A-q_B)(1+r/\lambda)e^{-r/\lambda}.
+$$
 
 This is a phenomenological model, not a derived particle theory. Define the charges—such as a normalized composition-dependent quantity—before fitting. Extended Earth and laboratory sources need volume integration. A source-independent offset, a universal coupling and a composition-dependent coupling are different hypotheses.
 

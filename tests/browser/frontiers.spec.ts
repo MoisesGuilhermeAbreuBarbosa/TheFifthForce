@@ -2,11 +2,11 @@ import {test,expect} from '@playwright/test';
 test('Library supports author search, filters, clear and selection export',async({page})=>{
  await page.goto('/literature');
  await page.getByRole('textbox',{name:'Search literature'}).fill('Harrow');
- await expect(page.getByRole('status')).toContainText('1 matching sources');
+ await expect(page.locator('.source-count').getByRole('status')).toContainText('1 matching sources');
  await expect(page.getByRole('link',{name:/Quantum algorithm for solving linear systems/})).toBeVisible();
  const download=page.waitForEvent('download');await page.getByRole('button',{name:'Export these results'}).click();expect((await download).suggestedFilename()).toBe('open-field-literature-selection.json');
  await page.getByLabel('Research field',{exact:true}).selectOption('Screened fields');await expect(page.getByRole('heading',{name:'No sources match these filters.'})).toBeVisible();
- await page.getByRole('button',{name:'Clear filters'}).click();await expect(page.getByRole('status')).toContainText('96 matching sources');
+ await page.getByRole('button',{name:'Clear filters'}).click();await expect(page.locator('.source-count').getByRole('status')).toContainText('96 matching sources');
 });
 test('Dossier links, equations, model controls and mobile layouts',async({page})=>{
  await page.goto('/');await page.screenshot({path:'test-results/dossier-home-desktop.png',fullPage:true});
