@@ -1,5 +1,6 @@
 import {test,expect} from '@playwright/test';
-import literature from '../../public/research/literature.json';
+import {readFileSync} from 'node:fs';
+const literature=JSON.parse(readFileSync(new URL('../../public/research/literature.json',import.meta.url),'utf8'));
 test('Original navigation, literature, formulas and embedded data',async({page})=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/');await page.getByRole('navigation',{name:'Research navigation'}).getByRole('link',{name:'Literature',exact:true}).click();await expect(page.getByRole('heading',{name:'Literature register'})).toBeVisible();

@@ -9,10 +9,11 @@ test('Library supports author search, filters, clear and selection export',async
  await page.getByRole('button',{name:'Clear filters'}).click();await expect(page.getByRole('status')).toContainText('96 matching sources');
 });
 test('Dossier links, equations, model controls and mobile layouts',async({page})=>{
+ await page.goto('/');await page.screenshot({path:'test-results/dossier-home-desktop.png',fullPage:true});
  await page.goto('/investigations');await expect(page.locator('.frontier-card')).toHaveCount(6);
  await page.getByRole('slider',{name:/Relative coupling/}).press('Home');await expect(page.locator('.model-readout')).toContainText('-73.58%');
  await page.getByRole('button',{name:'Reset parameters'}).click();await expect(page.locator('.model-readout')).toContainText('14.72%');
  const download=page.waitForEvent('download');await page.getByRole('button',{name:'Export model CSV'}).click();expect((await download).suggestedFilename()).toContain('yukawa-model');
  await page.locator('.frontier-card').first().click();await expect(page.locator('.katex-display').first()).toBeVisible();await expect(page.getByRole('link',{name:'Prepare a review'})).toHaveAttribute('href',/github.com.*issues\/new/);
- for(const url of ['/','/literature','/investigations','/investigations/screening']){await page.setViewportSize({width:390,height:844});await page.goto(url);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2)).toBeTruthy()}
+ for(const url of ['/','/literature','/investigations','/investigations/screening']){await page.setViewportSize({width:390,height:844});await page.goto(url);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+2)).toBeTruthy();await page.screenshot({path:'test-results/dossier-mobile-'+(url.replaceAll('/','-')||'home')+'.png',fullPage:true})}
 });
