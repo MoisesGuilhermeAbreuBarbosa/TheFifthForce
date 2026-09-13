@@ -47,3 +47,5 @@
 - [[Hypothesis-Adaptive-Discovery]]
 - [[Research-Implementation]]
 - [[Research-Dossier-Sources]]
+
+- [[Research-Frontiers]]

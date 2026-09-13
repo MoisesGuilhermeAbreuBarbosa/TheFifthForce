@@ -43,6 +43,50 @@
           }
         }
       }
+    },
+    "/api/v1/library": {
+      "get": {
+        "summary": "Search the canonical versioned source library",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "All terms match source metadata"
+          },
+          {
+            "name": "category",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact research field"
+          },
+          {
+            "name": "evidence",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Exact evidence type"
+          },
+          {
+            "name": "sort",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "register, newest or oldest"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Source records, total count and review-scope notice"
+          }
+        }
+      }
     }
   }
 }

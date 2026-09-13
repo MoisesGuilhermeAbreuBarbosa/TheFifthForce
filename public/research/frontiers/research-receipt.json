@@ -1,0 +1,57 @@
+{
+  "receipt_type": "research_receipt",
+  "project": "The Fifth Force",
+  "research_question": "Expand evidence-linked investigations and improve their website presentation",
+  "agent": {
+    "name": "Codex",
+    "organization": "OpenAI",
+    "model": "Not recorded"
+  },
+  "resources_consulted": [
+    "AGENTS.md",
+    "README.md",
+    "public/research/literature.json",
+    "public/research/dossier/",
+    "app/",
+    "lib/"
+  ],
+  "new_sources_found": [
+    "https://arxiv.org/abs/2002.11761",
+    "https://arxiv.org/abs/1502.03888",
+    "https://arxiv.org/abs/1604.04908",
+    "https://arxiv.org/abs/astro-ph/0309300",
+    "https://arxiv.org/abs/astro-ph/0309411",
+    "https://arxiv.org/abs/1001.4525",
+    "https://arxiv.org/abs/1612.05171",
+    "https://arxiv.org/abs/1812.08244",
+    "https://www.nature.com/articles/s41586-021-03250-7",
+    "https://arxiv.org/abs/0811.3171",
+    "https://arxiv.org/abs/1801.00862",
+    "https://arxiv.org/abs/1803.11173",
+    "https://arxiv.org/abs/1304.3061",
+    "https://arxiv.org/abs/quant-ph/0005055",
+    "https://arxiv.org/abs/quant-ph/9605043",
+    "https://arxiv.org/abs/1907.10621",
+    "https://arxiv.org/abs/1607.01454",
+    "https://arxiv.org/abs/1607.03485",
+    "https://arxiv.org/abs/1807.01235",
+    "https://arxiv.org/abs/1406.4920"
+  ],
+  "findings": [
+    "Six proposed research designs; no new experimental measurements",
+    "Twenty primary abstract/landing-page records annotated",
+    "Existing experimental findings retained"
+  ],
+  "evidence_relationship": "contextualizes",
+  "uncertainties": [
+    "No full-text audit of new sources",
+    "No new independent replication",
+    "Legacy annotations not re-audited"
+  ],
+  "recommended_next_steps": [
+    "Recover apparatus metrology",
+    "Implement finite-source likelihood with nuisance covariance",
+    "Execute matched-accuracy computational benchmarks"
+  ],
+  "timestamp": "2026-09-13T00:00:00Z"
+}

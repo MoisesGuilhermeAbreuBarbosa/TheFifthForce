@@ -16,3 +16,8 @@ Structured hypotheses: /research/dossier/hypotheses.json
 Source provenance: /research/dossier/sources.json
 Complete dossier: /research/dossier/complete-dossier.md
 These are proposed hypotheses and analytic benchmarks, not experimental findings.
+
+Research frontiers: /investigations (six proposed designs; no new detection).
+Canonical program: /research/frontiers/investigations.json
+Searchable source API: /api/v1/library?q=TERM
+Primary-record checks are abstract/metadata checks, not independent replications.

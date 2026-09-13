@@ -1138,5 +1138,410 @@
     "common_error": "Confusing source discovery or a subject mapping with verified experimental evidence.",
     "correction": "Read the primary source and publish a traceable claim-level review.",
     "source": "https://ntrs.nasa.gov/citations/19990023226"
+  },
+  {
+    "id": "SRC-077",
+    "year": 2020,
+    "topic": "New Test of the Gravitational 1/r² Law at Separations down to 52 μm",
+    "authors": "J. G. Lee; E. G. Adelberger; T. S. Cook; S. M. Fleischer; B. R. Heckel",
+    "category": "Short-range gravity",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Newtonian gravity fitted the torsion-balance measurements; the reported Yukawa bound is conditional on its interaction model.",
+    "evidence": "Experiment",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Treating the minimum separation as a universal exclusion on force range.",
+    "correction": "Use the published confidence construction and finite apparatus geometry.",
+    "source": "https://arxiv.org/abs/2002.11761",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "finite-range",
+      "systematics"
+    ]
+  },
+  {
+    "id": "SRC-078",
+    "year": 2015,
+    "topic": "Atom-interferometry constraints on dark energy",
+    "authors": "Paul Hamilton; Matt Jaffe; Philipp Haslinger; Quinn Simmons; Holger Müller; Justin Khoury",
+    "category": "Screened fields",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Cesium atoms near a source mass constrain screened scalar models in a vacuum chamber.",
+    "evidence": "Experiment",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Assuming microscopic probes and bulk bodies have identical screening.",
+    "correction": "Model source, atom and chamber screening together.",
+    "source": "https://arxiv.org/abs/1502.03888",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "screening"
+    ]
+  },
+  {
+    "id": "SRC-079",
+    "year": 2016,
+    "topic": "Search for Screened Interactions Associated with Dark Energy Below the 100 μm Length Scale",
+    "authors": "Alexander D. Rider; David C. Moore; Charles P. Blakemore; Maxime Louis; Marie Lu; Giorgio Gratta",
+    "category": "Screened fields",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Measured forces were compatible with electrostatic backgrounds, allowing bounds on additional interactions in this geometry.",
+    "evidence": "Experiment",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Interpreting a small force as a gravitational signal.",
+    "correction": "Include charge and patch-potential controls before fitting an exotic component.",
+    "source": "https://arxiv.org/abs/1604.04908",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "screening",
+      "systematics"
+    ]
+  },
+  {
+    "id": "SRC-080",
+    "year": 2004,
+    "topic": "Chameleon Fields: Awaiting Surprises for Tests of Gravity in Space",
+    "authors": "Justin Khoury; Amanda Weltman",
+    "category": "Screened fields",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Proposes a scalar whose effective mass depends on ambient matter density.",
+    "evidence": "Theory",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Reading historical viability statements as a current global constraint analysis.",
+    "correction": "Reassess the specified parameter point against later experiments.",
+    "source": "https://arxiv.org/abs/astro-ph/0309300",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "screening"
+    ]
+  },
+  {
+    "id": "SRC-081",
+    "year": 2004,
+    "topic": "Chameleon Cosmology",
+    "authors": "Justin Khoury; Amanda Weltman",
+    "category": "Screened fields",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Develops density-dependent scalar screening and its cosmological and local implications.",
+    "evidence": "Theory",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Applying a thin-shell approximation outside its regime.",
+    "correction": "Check boundary conditions and numerical convergence for the laboratory geometry.",
+    "source": "https://arxiv.org/abs/astro-ph/0309411",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "screening"
+    ]
+  },
+  {
+    "id": "SRC-082",
+    "year": 2010,
+    "topic": "Symmetron Fields: Screening Long-Range Forces Through Local Symmetry Restoration",
+    "authors": "Kurt Hinterbichler; Justin Khoury",
+    "category": "Screened fields",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Local symmetry restoration suppresses scalar coupling in sufficiently dense environments.",
+    "evidence": "Theory",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Confusing screening of a new scalar interaction with shielding Newtonian gravity.",
+    "correction": "Track the scalar contribution separately from ordinary gravity.",
+    "source": "https://arxiv.org/abs/1001.4525",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "screening"
+    ]
+  },
+  {
+    "id": "SRC-083",
+    "year": 2017,
+    "topic": "Testing sub-gravitational forces on atoms from a miniature, in-vacuum source mass",
+    "authors": "Matt Jaffe; Philipp Haslinger; Victoria Xu; Paul Hamilton; Amol Upadhye; Benjamin Elder; Justin Khoury; Holger Müller",
+    "category": "Atom interferometry",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Detects attraction to a small in-vacuum source mass and constrains chameleon and symmetron models.",
+    "evidence": "Experiment",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Combining apparatus results without translating geometry and model parameters.",
+    "correction": "Build an experiment-specific response before combining likelihoods.",
+    "source": "https://arxiv.org/abs/1612.05171",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "finite-range",
+      "screening"
+    ]
+  },
+  {
+    "id": "SRC-084",
+    "year": 2019,
+    "topic": "Experiment to detect dark energy forces using atom interferometry",
+    "authors": "Dylan Sabulsky; Indranil Dutta; E. A. Hinds; Benjamin Elder; Clare Burrage; Edmund J. Copeland",
+    "category": "Atom interferometry",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Atom–source attraction did not differ appreciably from Newtonian gravity; screened scalar parameters were constrained.",
+    "evidence": "Experiment",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Calling the experiment a detection of dark energy.",
+    "correction": "Distinguish a null search from the theory it constrains.",
+    "source": "https://arxiv.org/abs/1812.08244",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "screening"
+    ]
+  },
+  {
+    "id": "SRC-085",
+    "year": 2021,
+    "topic": "Measurement of gravitational coupling between millimetre-sized masses",
+    "authors": "Tobias Westphal; Hans Hepach; Jeremias Pfaff; Markus Aspelmeyer",
+    "category": "Precision gravimetry",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Demonstrates gravitational coupling using millimetre-sized source and test masses.",
+    "evidence": "Experiment",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Equating smaller test masses with a test of quantized gravity.",
+    "correction": "Separate classical force sensitivity from quantum-state preparation.",
+    "source": "https://www.nature.com/articles/s41586-021-03250-7",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "finite-range",
+      "systematics"
+    ]
+  },
+  {
+    "id": "SRC-086",
+    "year": 2009,
+    "topic": "Quantum algorithm for solving linear systems of equations",
+    "authors": "Aram W. Harrow; Avinatan Hassidim; Seth Lloyd",
+    "category": "Quantum computation",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Provides a quantum linear-system method for estimating properties of a solution under sparsity, conditioning and input-access assumptions.",
+    "evidence": "Algorithm",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Assuming an exponential speedup for reading every matrix-solution component.",
+    "correction": "Count state preparation, conditioning, repetitions and observable readout.",
+    "source": "https://arxiv.org/abs/0811.3171",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "quantum-benchmark"
+    ]
+  },
+  {
+    "id": "SRC-087",
+    "year": 2018,
+    "topic": "Quantum Computing in the NISQ era and beyond",
+    "authors": "John Preskill",
+    "category": "Quantum computation",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Explains opportunities and noise limitations for intermediate-scale quantum processors.",
+    "evidence": "Perspective",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Using a 2018 outlook as a hardware specification or demonstrated advantage.",
+    "correction": "Benchmark the actual backend and record calibration and circuit resources.",
+    "source": "https://arxiv.org/abs/1801.00862",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "quantum-benchmark"
+    ]
+  },
+  {
+    "id": "SRC-088",
+    "year": 2018,
+    "topic": "Barren plateaus in quantum neural network training landscapes",
+    "authors": "Jarrod R. McClean; Sergio Boixo; Vadim N. Smelyanskiy; Ryan Babbush; Hartmut Neven",
+    "category": "Quantum computation",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Shows exponentially suppressed gradients for a broad class of parameterized random quantum circuits.",
+    "evidence": "Theory",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Assuming more qubits automatically improve learning.",
+    "correction": "Measure gradient variance, training cost and ansatz dependence.",
+    "source": "https://arxiv.org/abs/1803.11173",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "quantum-benchmark"
+    ]
+  },
+  {
+    "id": "SRC-089",
+    "year": 2014,
+    "topic": "A variational eigenvalue solver on a quantum processor",
+    "authors": "Alberto Peruzzo; Jarrod McClean; Peter Shadbolt; Man-Hong Yung; Xiao-Qi Zhou; Peter J. Love; Alán Aspuru-Guzik; Jeremy L. O’Brien",
+    "category": "Quantum computation",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Demonstrates a hybrid variational eigenvalue method with a small photonic processor and a molecular example.",
+    "evidence": "Experiment",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Calling a small eigensolver demonstration a general computational speedup.",
+    "correction": "Compare identical observables at matched accuracy with classical solvers.",
+    "source": "https://arxiv.org/abs/1304.3061",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "quantum-benchmark"
+    ]
+  },
+  {
+    "id": "SRC-090",
+    "year": 2002,
+    "topic": "Quantum Amplitude Amplification and Estimation",
+    "authors": "Gilles Brassard; Peter Høyer; Michele Mosca; Alain Tapp",
+    "category": "Quantum computation",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Develops amplitude amplification and estimation with query improvements under coherent-oracle assumptions.",
+    "evidence": "Algorithm",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Ignoring the cost of constructing and reversing the oracle.",
+    "correction": "Report total circuit resources and sampling error.",
+    "source": "https://arxiv.org/abs/quant-ph/0005055",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "quantum-benchmark"
+    ]
+  },
+  {
+    "id": "SRC-091",
+    "year": 1996,
+    "topic": "A fast quantum mechanical algorithm for database search",
+    "authors": "Lov K. Grover",
+    "category": "Quantum computation",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Gives a quadratic query improvement for unstructured search.",
+    "evidence": "Algorithm",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Describing superposition as reading all candidates in one pass.",
+    "correction": "Specify the oracle and distinguish query complexity from end-to-end runtime.",
+    "source": "https://arxiv.org/abs/quant-ph/9605043",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "quantum-benchmark"
+    ]
+  },
+  {
+    "id": "SRC-092",
+    "year": 2019,
+    "topic": "MadMiner: Machine learning-based inference for particle physics",
+    "authors": "Johann Brehmer; Felix Kling; Irina Espejo; Kyle Cranmer",
+    "category": "Statistical inference",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Introduces software for machine-learning-assisted inference from particle-physics simulations.",
+    "evidence": "Method",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Assuming a learned estimator remains calibrated for a misspecified simulator.",
+    "correction": "Use held-out simulations, coverage checks and nuisance stress tests before transfer to gravity.",
+    "source": "https://arxiv.org/abs/1907.10621",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "composition",
+      "systematics"
+    ]
+  },
+  {
+    "id": "SRC-093",
+    "year": 2016,
+    "topic": "Verifying quantum superpositions at metre scales",
+    "authors": "Dan M. Stamper-Kurn; G. Edward Marti; Holger Müller",
+    "category": "Quantum coherence",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Questions whether the reported interference alone establishes the claimed macroscopic superposition.",
+    "evidence": "Scientific comment",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Treating either side of a published exchange as an uncontested experimental verdict.",
+    "correction": "Read this comment alongside the authors’ reply and inspect the observable.",
+    "source": "https://arxiv.org/abs/1607.01454",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "coherence"
+    ]
+  },
+  {
+    "id": "SRC-094",
+    "year": 2016,
+    "topic": "Response to “Verifying quantum superpositions at metre scales”",
+    "authors": "T. Kovachy and collaborators",
+    "category": "Quantum coherence",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Responds to the interpretation challenge concerning a spatially separated atomic-superposition experiment.",
+    "evidence": "Scientific reply",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Citing the critical comment without the response.",
+    "correction": "Assess both arguments against the actual preparation and measurement protocol.",
+    "source": "https://arxiv.org/abs/1607.03485",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "coherence"
+    ]
+  },
+  {
+    "id": "SRC-095",
+    "year": 2020,
+    "topic": "Quantum generative adversarial network for generating discrete distribution",
+    "authors": "Haozhen Situ; Zhimin He; Yuyi Wang; Lvzhou Li; Shenggen Zheng",
+    "category": "Quantum computation",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Proposes a hybrid quantum generator and classical discriminator for discrete distributions.",
+    "evidence": "Algorithm",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Assuming a generative model discovers physical laws or guarantees practical advantage.",
+    "correction": "Evaluate held-out distribution accuracy, mode coverage and all training resources.",
+    "source": "https://arxiv.org/abs/1807.01235",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "quantum-benchmark"
+    ]
+  },
+  {
+    "id": "SRC-096",
+    "year": 2015,
+    "topic": "The Trotter Step Size Required for Accurate Quantum Simulation of Quantum Chemistry",
+    "authors": "David Poulin; M. B. Hastings; Dave Wecker; Nathan Wiebe; Andrew C. Doherty; Matthias Troyer",
+    "category": "Quantum computation",
+    "claim": "See primary source; annotation scope is stated below.",
+    "result": "Studies how product-formula step requirements depend on the structure of a simulated molecular Hamiltonian.",
+    "evidence": "Method",
+    "status": "Primary record checked · not independently replicated",
+    "replication": "No independent replication performed in this update",
+    "common_error": "Transferring molecular resource estimates directly to a gravity Hamiltonian.",
+    "correction": "Derive the encoded Hamiltonian and test its own discretization and Trotter errors.",
+    "source": "https://arxiv.org/abs/1406.4920",
+    "reviewed_on": "2026-09-13",
+    "review_scope": "Primary landing page / abstract and bibliographic record; not a full-text or raw-data audit.",
+    "investigations": [
+      "quantum-benchmark"
+    ]
   }
 ]

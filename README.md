@@ -70,3 +70,11 @@ Home is a dedicated landing view. Shared navigation includes consistent icons, a
 Open `/quantum-advances/research` for the nine-chapter research program, five structured hypotheses, experimental controls, source provenance and implementation roadmap. The H1 explorer compares selected, complementary and unconditional outcomes in a specified finite Gaussian impulse model. These are mathematical benchmarks, not physical detections.
 
 Canonical chapters: `public/research/dossier/`. Run `python3 scripts/prepare-research-dossier.py` after editing them to refresh complete Markdown and Wiki copies. Run `python3 scripts/verify-research-dossier.py` (NumPy required) to independently check numerical distributions, fixtures and the existing Panda summary. The hypothesis contract is `schemas/research-hypothesis.schema.json`. Future capabilities are explicitly marked in the implementation chapter.
+
+## September 2026 research edition
+
+`/investigations` adds six proposed investigations: finite-range geometry, scalar screening, composition dependence, adversarial systematics, coherence observables and quantum benchmarks. Each has equations, controls, rejection criteria, linked source records and a Markdown export. These are AI-assisted research designs, not new experimental detections. The point-mass Yukawa explorer computes an illustrative model and exports its curve; it applies no experimental constraints.
+
+The current canonical library is `public/research/literature.json` (96 records, including 20 primary abstract/landing-page checks dated 2026-09-13). `/literature` searches authors, IDs, claims and limitations, filters by field/type, sorts by publication year and exports selections. `/api/v1/library` supports `q`, `category`, `evidence` and `sort`. The archived Rev02 workbook and atlas retain their historical content. Review scopes distinguish inherited annotations from new primary-record checks.
+
+`public/research/frontiers/investigations.json` is the canonical new program; run `python3 scripts/prepare-frontiers.py` to regenerate its Markdown and Wiki exports. GitHub remains the persistent source store. No external database credentials are needed or introduced. The production `anti-gravity-site-rev02` deployment was observed on `main` on 2026-09-13; earlier branch guidance above is historical.

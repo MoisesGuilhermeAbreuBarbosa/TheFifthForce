@@ -1,8 +1,9 @@
 import {test,expect} from '@playwright/test';
+import literature from '../../public/research/literature.json';
 test('Original navigation, literature, formulas and embedded data',async({page})=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('/');await page.getByRole('navigation',{name:'Research navigation'}).getByRole('link',{name:'Literature',exact:true}).click();await expect(page.getByRole('heading',{name:'Literature register'})).toBeVisible();
- await page.getByRole('button',{name:'Next sources'}).click();await expect(page.getByText('Page 2 / 7',{exact:true})).toBeVisible();
+ await page.getByRole('button',{name:'Next sources'}).click();await expect(page.getByText(`Page 2 / ${Math.ceil(literature.length/12)}`,{exact:true})).toBeVisible();
  await page.getByRole('textbox',{name:'Search literature'}).fill('Alcubierre');await expect(page.getByRole('link',{name:/Alcubierre warp metric/})).toBeVisible();
  await page.goto('/#paper');await expect(page.locator('.katex-display').first()).toBeVisible();await expect(page.locator('.recharts-wrapper')).toBeVisible();await expect(page.getByRole('button',{name:'Read aloud',exact:true})).toBeVisible();
  const download=page.waitForEvent('download');await page.getByRole('link',{name:'Download Markdown',exact:true}).click();expect((await download).suggestedFilename()).toBe('REPORT-source.md');
